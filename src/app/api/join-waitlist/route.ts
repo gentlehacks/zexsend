@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase-client'
-// import { sendWaitlistEmail } from '@/utils/sendEmail'
+import { sendBrevoEmail } from "@/utils/brevo"
 
 export async function POST(req: Request) {
   const { name, email } = await req.json()
@@ -31,7 +31,11 @@ export async function POST(req: Request) {
   }
 
   console.log("📧 Sending email to:", email);
-  // sendWaitlistEmail(name, email);
+  await sendBrevoEmail({
+    to: email,
+    templateId: 1,
+    params: { name }, 
+  });
 
   return NextResponse.json({ message: '🎉 Successfully joined the waitlist!' }, { status: 200 })
 }

@@ -55,7 +55,7 @@ export default function ContactPage() {
       {/* Header */}
       <section className="max-w-3xl mx-auto text-center">
         <div className="flex items-center justify-center mb-4 mt-8">
-          <h1 className="text-2xl font-bold px-4 py-2 bg-gray-200 rounded-2xl w-fit">
+          <h1 className="text-lg font-extrabold px-4 py-2 bg-gray-200 rounded-2xl w-fit">
             Contact Us
           </h1>
         </div>

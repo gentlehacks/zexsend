@@ -85,7 +85,7 @@ const About = () => {
           transition={{type: 'spring', stiffness: 300}}
         className="relative w-full h-[30rem] rounded-2xl overflow-hidden shadow-lg border-3 border-gray-400">
           <Image
-            src="/aliyu-suleiman.jpg" 
+            src="/ceo-1.JPG" 
             alt="Founder"
             fill
             priority
@@ -96,11 +96,11 @@ const About = () => {
 
       {/* Vision / Mission */}
       <section className="max-w-4xl mx-auto mt-25 text-center">
-        <div className="w-ful flex items-center justify-center mb-4">
-          <h2 className="text-2xl font-semibold p-1 px-4 rounded-2xl bg-gray-200 w-fit">Our Vision</h2>
+        <div className="w-full flex items-center justify-center mb-4">
+          <h2 className="text-lg font-semibold p-1 px-4 rounded-2xl bg-gray-200 w-fit">Our Vision</h2>
         </div>
         
-        <p className="text-lg text-gray-700 mt-4">
+        <p className="text-md text-gray-700 mt-4">
           At PexelXus, we believe in making technology more{" "}
           <span className="font-medium">accessible</span> and{" "}
           <span className="font-medium">empowering</span> for

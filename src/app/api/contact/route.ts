@@ -1,4 +1,4 @@
-// import { sendContactEmail } from "@/utils/sendEmail";
+import { sendBrevoEmail } from "@/utils/brevo";
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
@@ -12,14 +12,11 @@ export async function POST(req: Request) {
       );
     }
 
-    // const result = await sendContactEmail(name, email, message);
-
-    // if (!result.success) {
-    //   return NextResponse.json(
-    //     { error: "Failed to send email" },
-    //     { status: 500 }
-    //   );
-    // }
+    await sendBrevoEmail({
+      to: email,
+      templateId: 3,
+      params: { name , email, message}, 
+    });
 
     return NextResponse.json({ success: true, message: "Email sent successfully" });
   } catch (error) {

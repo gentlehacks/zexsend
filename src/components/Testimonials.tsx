@@ -41,7 +41,7 @@ const Testimonials = () => {
       image: "/desola.jpg",
       name: "Densola",
       address: "Lagos",
-      comment: "Finally a nigerian app that have great UX right.",
+      comment: "Finally a nigerian app that have great UX right. Smooth tansaction no 'pending' wahala!",
       category: "Software Developer"
     },
   ];
