@@ -3,6 +3,7 @@ import Head from "next/head";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
 import { Poppins } from 'next/font/google';
+import Script from "next/script";
 import Header from "@/components/Header";
 
 const poppins = Poppins({
@@ -66,6 +67,53 @@ export const metadata: Metadata = {
    manifest: "/site.webmanifest",
 };
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Pexelxus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pexelxus is a Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Pexelxus a Nigerian startup?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes Pexelxus is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I join the Pexelxus waitlist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can join the waitlist by visiting our website and submitting your name and email in the waitlist form."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I contact Pexelxus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can contact us through the contact form on our website or via our official email."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who is Founder of Pexelxus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pexelxus is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way."
+        }
+      },
+    ]
+  };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -109,7 +157,12 @@ export default function RootLayout({
           enabled={process.env.NODE_ENV === 'production'}
         >
           <Header />
-          {children}
+            {children}
+          <Script
+            id="faq-schema"
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          />
         </PlausibleProvider>
       </body>
     </html>

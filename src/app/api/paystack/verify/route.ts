@@ -40,7 +40,7 @@ export async function POST(req: Request) {
       await sendBrevoEmail({
         to: customer.email,
         templateId: 4,
-        params: { name: "Unknown", amount}
+        params: { name: '', amount}
       });                              
 
       return NextResponse.json({ status: "success", data: verifyData.data })
