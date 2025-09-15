@@ -39,8 +39,11 @@ export async function POST(req: Request) {
       // ✅ Send thank-you email  
       await sendBrevoEmail({
         to: customer.email,
-        templateId: 4,
-        params: { name: '', amount}
+        templateId: 4,                // second param = template ID
+        params: {
+          name: metadata?.name || "Anonymous",
+          amount: (amount / 100).toString(),
+        }
       });                              
 
       return NextResponse.json({ status: "success", data: verifyData.data })
