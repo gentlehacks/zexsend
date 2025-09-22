@@ -9,7 +9,7 @@ const Testimonials = () => {
       image: "/aliyu-suleiman.jpg",
       name: "Aliyu",
       address: "Niger state",
-      comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂",
+      comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂 PexelXus is a new way life Saver!",
       category: "Graphic designer"
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       image: "/james.jpg",
       name: "James",
       address: "Lagos",
-      comment: "Bought data at 2AM for my assignment. Delivery took 10 seconds - no lies!",
+      comment: "Bought data at 2AM for my assignment. Delivery took only 5 seconds - no lies!",
       category: "Freelancer"
     },
     {
@@ -25,7 +25,7 @@ const Testimonials = () => {
       image: "/mustapha.jpg",
       name: "Mustapha",
       address: "Niger state",
-      comment: "The cashback is small-small, but e dey show!",
+      comment: "The App is very easy to get started and very user-friendly UI.",
       category: "Student"
     },
     {
@@ -33,7 +33,7 @@ const Testimonials = () => {
       image: "/lanre.jpg",
       name: "Lanre Tobi",
       address: "Kano",
-      comment: "I just got free 2GB because my guy gifted me airtime 😂🔥",
+      comment: "I just got free 2GB because i send referral link to my friends 😂🔥",
       category: "Nurse"
     },
     {

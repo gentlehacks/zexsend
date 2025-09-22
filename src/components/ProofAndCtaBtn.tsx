@@ -7,7 +7,7 @@ import { FaStar } from "react-icons/fa6";
 
 const ProofAndCtaBtn = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center mt-[5rem]">
+    <div className="w-full flex flex-col items-center justify-center mt-[3rem]">
       {/* <motion.h1 
         initial={{opacity: 0, scale: 0.7}}
         whileInView={{opacity: 1, scale: 1}}

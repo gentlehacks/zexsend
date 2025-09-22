@@ -6,7 +6,7 @@ import {usePathname, useRouter} from "next/navigation";
 import Link from "next/link";
 import MobileNav from "@/components/MobileNav";
 import { CgGift } from "react-icons/cg";
-import { BiMenu } from "react-icons/bi";
+import { RiMenu3Fill } from "react-icons/ri";
 
 const Header = () => {
 
@@ -92,7 +92,7 @@ const Header = () => {
               whileTap={{scale: [1, 1.1, 1]}}
               onClick={() => setIsOpenMenu(!isOpenMenu)}
             className="block md:hidden ml-5 bg-blue-400 hover:bg-blue-300 transition-all duration-200 rounded-lg p-1 mr-4">
-              <BiMenu className="text-[1.9rem]" />
+              <RiMenu3Fill className="text-[1.9rem]" />
             </motion.div>
             <div className="hidden md:flex">
               <Link href="/donate">

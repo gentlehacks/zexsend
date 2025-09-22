@@ -1,73 +1,161 @@
-"use client"
-import {motion} from "framer-motion";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaXTwitter, FaInstagram, FaFacebook } from "react-icons/fa6";
 
-
-const currentYear = new Date().getFullYear();
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <div className="bg-gradient-to-t from-[#0f172a] via-[#1e293b] to-black w-full flex flex-col items-center justify-center p-4 px-6 pt-15  text-gray-100 mt-[12rem] bg-gradient-hero">
-      <div className="flex items-center mt-3">
-        {/* Pexelxus - Logo */}
-          <div className="w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full object-cover overflow-hidden border-1 border-gray-400">
-            <Image
-              src="/favicon.png"
-              width={100}
-              height={100}
-              alt="PexelXus: Social meets VTU"
-              priority
-              className="w-[110%] "
-            />
-          </div>
-          <h2 className="ml-2 text-lg font-semibold">PexelXus</h2>
-      </div>
-      <motion.p 
-        initial={{width: "0%", padding: "0px"}}
-        whileInView={{width: "100%"}}
-        viewport={{ 
-            margin: "0px 0px -25% 0px"
-          }}
-        transition={{duration: 1, ease: 'easeInOut'}}
-      className="text-center text-[0.9rem] sm: sm:text-md md:text-md lg:text-1xl sm:text-[0.9rem] md:text-[1rem] lg:text-[1rem] text-gray-100 border-l-3 border-r-3 border-green-500 px-3 mt-[3rem] mx-4 sm:mx-8 md:mx-15 lg:mx-25 w-fit">
-        Gift Airtime • Pay Bills • Flex with Friends.
-      </motion.p>
-      <div className="flex items-center justify-center px-4 md:px-8 mt-25 mb-8">
-        <div className="flex flex-col items-center justify-center">
-          <p className="text-[0.9rem]">Follow Us:</p>
-          <div className="flex items-center justify-center gap-3 mt-3">
-            <Link href="https://www.x.com/salihuadamu4678">
-              <FaSquareXTwitter className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
-            </Link>
-            <Link href="https://www.facebook.com/profile.php?id=61575434355333">
-              <FaFacebookSquare className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/salihu-adamu-3b9b97290">
-              <FaLinkedin className="relative text-[1.5rem] hover:text-blue-500 hover:mb-1 transition-all duration-200 cursor-pointer" />
-            </Link>
-            
-            
+    <footer id="footer" className="relative py-6 pt-10 md:py-[24px] bg-gray-900 mt-[5rem]">
+      <div className="relative">
+        {/* Main container */}
+        <div className="relative w-full max-w-[1731px] mx-auto px-4 sm:px-6 md:px-[32px] xl:px-[96px] mt-10">
+          <div className="flex flex-col lg:flex-row items-start justify-between pb-8 lg:pb-[34px] space-y-8 lg:space-y-0">
+            <div className="flex flex-col gap-4 md:gap-[23px] w-full lg:w-auto pb-6 lg:pb-[52px]">
+              <Link href="/" className="flex items-center">
+                <figure className="w-10">
+                  <Image
+                    alt="PexelXus logo"
+                    src="/favicon.png"
+                    width={128}
+                    height={40}
+                    className="object-cover w-full"
+                  />
+                </figure>
+                <h4 className="ml-2 font-bold">PexelXus</h4>
+              </Link>
+
+              <h5 className="mt-4 text-[#FFFFFFB2] text-base md:text-base leading-relaxed md:leading-[39px] max-w-full md:max-w-[497px]">
+                Gift Airtime • Pay Bills • Flex with Friends
+              </h5>
+
+              <h2 className="mt-10  text-base md:text-[18.58px] font-medium text-white lg:hidden">
+                SOCIALS
+              </h2>
+
+              {/* Social icons */}
+              <div className="flex flex-wrap gap-4 md:gap-[46px] items-center">
+                <Link
+                  href="https://x.com/pexelxus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <FaXTwitter className="w-6 h-6 text-blue-500" />
+                  <span className="text-white text-sm md:text-[15.52px] leading-[18.21px]">
+                    Twitter
+                  </span>
+                </Link>
+                <Link
+                  href="https://instagram.com/pexelxus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <FaInstagram className="w-6 h-6 text-blue-500" />
+                  <span className="text-white text-sm md:text-[15.52px] leading-[18.21px]">
+                    Instagram
+                  </span>
+                </Link>
+                <Link
+                  href="https://facebook.com/pexelxus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:text-white transition-colors"
+                >
+                  <FaFacebook className="w-6 h-6 text-blue-500" />
+                  <span className="text-white text-sm md:text-[15.52px] leading-[18.21px]">
+                    Facebook
+                  </span>
+                </Link>
+              </div>
+
+              {/* Product Hunt badge */}
+              <Link
+                href="https://www.producthunt.com/products/pexelxus?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-pexelxus" 
+                target="_blank"
+              >
+                <Image
+                  alt="PexelXus - Buy&#0032;airtime&#0044;&#0032;data&#0044;&#0032;gift&#0032;friends&#0032;&#0038;&#0032;love&#0032;ones | Product Hunt"
+                  width={250}
+                  height={104}
+                  src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1017599&theme=light&t=1758535860719"
+                  className="w-[10rem]"
+                />
+              </Link>
+            </div>
+
+            {/* Links, Support, Legal */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-20 md:gap-[100px] w-full lg:w-auto">
+              <ul className="space-y-4">
+                <p className="text-xl md:text-[18.58px] leading-[39px] font-bold text-white">
+                  Links
+                </p>
+                <li className="flex flex-col gap-5 md:gap-[20px] mt-2 md:mt-[18px]">
+                  <Link
+                    href="#features"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-relaxed md:leading-[39px]">
+                      Features
+                    </p>
+                  </Link>
+                  <Link
+                    href="#faq"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-relaxed md:leading-[39px]">
+                      FAQ
+                    </p>
+                  </Link>
+                  <Link
+                    href="/#waitlistform"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <button className="bg-blue-600 rounded-full text-white  flex items-center justify-center px-4 md:px-6 py-2 md:py-3 text-sm md:text-md">
+                      Join waitlist
+                    </button>
+                  </Link>
+                </li>
+              </ul>
+
+              <ul>
+                <p className="text-xl md:text-[18.58px] leading-[39px] font-bold text-white">
+                  Support
+                </p>
+                <li className="flex flex-col gap-[20px] mt-[18px]">
+                  <Link href="/about">
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-[39px] font-normal transition-all duration-300">
+                      About Us
+                    </p>
+                  </Link>
+                  <Link href="/contact">
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-[39px] font-normal transition-all duration-300">
+                      Contact Us
+                    </p>
+                  </Link>
+                  <Link href="/donate">
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-[39px] font-normal transition-all duration-300">
+                      Donate
+                    </p>
+                  </Link>
+                </li>
+              </ul>
+
+            </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center ml-[3rem] xs:ml-[4rem] sm:ml-[5rem] md:ml-[7rem] lg:ml-[10rem]">
-          <p className="text-[0.9rem]">Contact:</p>
-          <Link href="mailto:support@pexelxus.com">
-            <p className="text-[0.9rem] text-gray-200 mt-3 hover:border-b-1 hover:border-blue-500">
-              support@pexelxus.com
-            </p>
-          </Link>
-        </div>
       </div>
-      <div className="w-[97%] flex items-center justify-center pt-3 border-t-1 border-gray-500 mb-5">
-        <p className="text-sm text-gray-300 mt-4">
-          &copy; <span> {currentYear} </span> PexelXUS .  All Rights Reserved.
+
+      {/* Divider */}
+      <div className="bg-[#FFFFFF1A] h-px mt-4 md:mt-6"></div>
+
+      {/* Footer bottom text */}
+      <div className="pt-4 md:pt-[32px]">
+        <p className="text-[#FFFFFF99] mx-auto text-center text-sm md:text-base xl:text-[18px] leading-relaxed md:leading-[39px]">
+          PexelXus © {new Date().getFullYear()} all rights reserved.
         </p>
       </div>
-    </div>
-  )
+    </footer>
+  );
 }
-
-export default Footer

@@ -54,14 +54,11 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-50 text-gray-900 px-4 pt-16 pb-25 md:px-20">
       {/* Header */}
       <section className="max-w-3xl mx-auto text-center">
-        <div className="flex items-center justify-center mb-4 mt-8">
-          <h1 className="text-lg font-extrabold px-4 py-2 bg-gray-200 rounded-2xl w-fit">
-            Contact Us
-          </h1>
-        </div>
-        
-        <p className="text-lg text-gray-600">
-          Have questions or want to <span className="border-b-1 border-blue-500 font-medium"> partner with us? </span> We&apos;d love to hear from you.
+        <h1 className="text-2xl md:text-3xl font-extrabold flex items-center justify-center">
+          Get in Touch
+        </h1>
+        <p className="text-lg text-gray-800">
+          Have questions about PexelXus or want to partner with us? 
           Fill out the form below or connect with us on social media.
         </p>
       </section>
