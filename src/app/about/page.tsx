@@ -41,7 +41,7 @@ const About = () => {
           <motion.div 
             whileHover={{bottom: 3}}
             transition={{type: 'spring', stiffness: 300}}
-          className="bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-black h-[30rem] p-5 py-8 text-gray-100 rounded-2xl border-1 border-blue-300 hover:border-blue-400">
+          className="bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-black h-[30rem] p-5 py-8 text-gray-100 rounded-2xl border-1 border-blue-300 hover:border-blue-400 bg-gradient-founder">
             <h2 className="bg-gradient-to-r from-blue-500 to-gray-800 text-2xl font-semibold rounded-xl p-1 px-2 w-fit mt-2">Meet the Founder</h2>
             <p className="text-gray-100 leading-[2] mt-8">
               Hi, I&apos;m <span className="font-semibold text-gray-100 border-b-1 border-blue-500">Salihu Adamu,</span> the founder
