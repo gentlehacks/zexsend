@@ -31,19 +31,14 @@ const Header = () => {
           <div className="flex items-center">
             {/* Pexelxus - Logo */}
             <Link href="#" className="flex items-center">
-              <div className="w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full object-cover overflow-hidden border-1 border-gray-400">
-                <Image
-                  src="/favicon.png"
-                  width={100}
-                  height={100}
-                  alt="PexelXus: Social meets VTU"
-                  priority
-                  className="w-[120%] "
-                />
-              </div>
-              <h3 className="text-[1.1rem] font-bold ml-2">
-                Pexelxus
-              </h3>
+              <Image
+                src="/pexelxus-banner-blue-black.png"
+                width={100}
+                height={100}
+                alt="PexelXus: Gift • Share • and Earn"
+                priority
+                className="w-[120%] "
+              />
             </Link>
             
             

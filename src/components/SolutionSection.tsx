@@ -9,7 +9,7 @@ const ProblemSection = () => {
   return (
       <motion.section className="py-20 px-6 max-w-6xl mx-auto mt-[8rem] flex flex-col items-center justify-center">
         <h2 className="text-2xl lg:text-3xl font-semibold text-center px- mb-[5rem]">Why Nigerians Choose <span className="text-blue-500 border-b-1 border-green-600"> PexelXus </span></h2>
-        <div className="w-full flex flex-col overflow-hidden md:px-[4rem] lg:px-[10rem] mt-[4rem] border-1 border-blue-300 rounded-3xl p-3">
+        <div className="w-full flex flex-col overflow-hidden md:mx-[4rem] lg:mx-[10rem] border-1 border-blue-300 hover:border-blue-500 rounded-3xl p-3">
           <div className="flex flex-col">
             <div className="flex items-center mb-3">
               <div className="w-3 h-3 bg-blue-400 rounded-full mr-2" />
