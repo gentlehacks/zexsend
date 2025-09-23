@@ -96,7 +96,7 @@ const WaitlistForm = () => {
         initial={{opacity: 0, y: '150px'}}
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 1, ease: 'easeOut'}}
-      className="w-[100%] sm:w-[90%] md:w-[35rem] lg:w-[40rem] flex flex-col items-center justify-center p-5 pt-8 bg-white text-gray-900 rounded-xl shadow-xl mt-[7rem]">
+      className="w-[97%] sm:w-[90%] md:w-[35rem] lg:w-[40rem] flex flex-col items-center justify-center p-5 pt-8 bg-white text-gray-900 rounded-xl shadow-xl border-1 border-blue-300 hover:border-blue-400 mt-[7rem]">
         <h1 className="text-lg sm:text-lg md:text-xl lg:text-xl font-semibold">
           Don&apos;t miss launch day. <span className="text-blue-600 border-b-1 border-green-600"> Join now. </span>
         </h1>

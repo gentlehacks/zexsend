@@ -29,7 +29,7 @@ const FeaturesSection = () => {
               viewport={{ 
               margin: "0px 0px -12% 0px" 
             }}
-            className="bg-white rounded-2xl shadow-sm hover:shadow-md transition-all duration-200">
+            className="bg-white rounded-2xl shadow-sm border-1 border-blue-100 hover:border-blue-200 hover:shadow-md transition-all duration-200">
               <div className="p-6 text-center">
                 <f.icon className="w-10 h-10 mx-auto text-blue-600 mb-4" />
                 <h3 className="font-bold text-lg mb-3">{f.title}</h3>

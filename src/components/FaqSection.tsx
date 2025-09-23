@@ -20,7 +20,7 @@ const FaqSection = () => {
       </p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">
         {/* Q - 01 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-2'>
+        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">What is PexelXus?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
@@ -32,7 +32,7 @@ const FaqSection = () => {
           </AccordionItem>
         </Accordion>
         {/* Q - 02 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-2'>
+        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">How do I donate to support PexelXus?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
@@ -44,7 +44,7 @@ const FaqSection = () => {
           </AccordionItem>
         </Accordion>
         {/* Q - 03 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-2'>
+        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">Is my payment secure?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
@@ -55,7 +55,7 @@ const FaqSection = () => {
         </Accordion>
         
         {/* Q - 04 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-2'>
+        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">Can I join the waitlist?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
@@ -68,7 +68,7 @@ const FaqSection = () => {
           </AccordionItem>
         </Accordion>
         {/* Q - 05 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-2'>
+        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">When will PexelXus launch?</AccordionTrigger>
             <AccordionContent className="text-gray-800">

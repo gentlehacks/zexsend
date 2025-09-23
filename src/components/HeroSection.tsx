@@ -3,8 +3,8 @@ import {motion} from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
 import { HiBadgeCheck } from "react-icons/hi";
-import { FcSms } from "react-icons/fc";
-import { FcChargeBattery } from "react-icons/fc";
+import { RiUserCommunityLine } from "react-icons/ri";
+import { LuSmartphoneCharging } from "react-icons/lu";
 // import { BiDownload } from "react-icons/bi";
 import { FaShieldAlt } from "react-icons/fa";
 
@@ -77,7 +77,7 @@ const HeroSection = () => {
           }}
         className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
         >
-            <FcSms />
+            <RiUserCommunityLine />
             <p className="ml-3">Connect</p>
           </motion.div>
           <motion.div
@@ -89,7 +89,7 @@ const HeroSection = () => {
             }}
           className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
           >
-            <FcChargeBattery />
+            <LuSmartphoneCharging />
             <p className="ml-3 text-">Recharge</p>
           </motion.div>
         </div>

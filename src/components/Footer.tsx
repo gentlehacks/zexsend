@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="flex flex-col lg:flex-row items-start justify-between pb-8 lg:pb-[34px] space-y-8 lg:space-y-0">
             <div className="flex flex-col gap-4 md:gap-[23px] w-full lg:w-auto pb-6 lg:pb-[52px]">
               <Link href="/" className="flex items-center">
-                <figure className="w-100">
+                <figure className="w-40">
                   <Image
                     alt="PexelXus logo"
                     src="/pexelxus-banner-round-blue.png"

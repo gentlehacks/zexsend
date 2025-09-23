@@ -1,6 +1,9 @@
 "use client";
 // import { error } from "console";
 import { useState } from "react";
+import { CgGift } from "react-icons/cg";
+import Footer from "@/components/Footer"
+import DonateModal from "@/components/DonateModal"
 
 export default function DonatePage() {
   const [name, setName] = useState<string>(""); 
@@ -8,6 +11,7 @@ export default function DonatePage() {
   const [email, setEmail] = useState<string>(""); 
   const [message, setMessage] = useState<string>(""); 
   const [submitting, setSubmitting] = useState<boolean>(false); 
+  const [openModal, setOpenModal] = useState<boolean>(false);
   
 
   const handleDonate = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -50,69 +54,41 @@ export default function DonatePage() {
   }
 
   return (
-    <main className="min-h-screen bg-gray-50 text-gray-900 px-2 py-16 md:px-20">
-      <section className="max-w-3xl mx-auto text-center">
+    <main className="min-h-screen bg-gray-50 text-gray-900 pt-16">
+      <section className="w-full md:w-[80%] mx-auto flex flex-col items-center justify-center text-center">
         <div className="mb-10 flex items-center justify-center">
-          <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support Pexelxus</h1>
+          <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support Pexelxus 🎁</h1>
         </div>
         
-        <p className="text-lg text-gray-700 mt-[1.5rem]">
-          Help us build <span className="border-b-1 border-blue-500 font-medium"> Nigeria’s trusted platform </span> for airtime, data, gifting,
-          and content sharing. Every donation makes a difference 🙏.
+        <p className="text-lg text-gray-700 mt-[1.5rem] px-3 leading-[1.1]">
+          Help us build <span className="font-medium"> Nigeria&apos;s trusted platform </span> for airtime, data, and gift sharing, Every donation makes a difference.
+          Your donation regardless of size, fuels our ongoing efforts to develop innovative features, uphold our platform's stability, and expand our reach to users in Nigeria.
         </p>
+        <button onClick={() => setOpenModal(!openModal)}
+        className="px-6 py-3 rounded-full border-2 border-gray-800 hover:border-black flex items-center text-lg font-medium cursor-pointer mt-20"
+        >
+          <CgGift className="mr-2" />
+          Donate
+        </button>
       </section>
 
-      <form onSubmit={handleDonate} className="w-[100%] max-w-3xl mx-auto mt-12 bg-white shadow-xl rounded-2xl py-8 px-4 sm:px-6 md:px-8 text-center">
-        <h2 className="text-gray-900 text-2xl font-semibold mb-6">
-          Make a <span className="border-b-1 border-blue-500"> Donation</span>
-        </h2>
-
-        {/* Name */}
-        <input
-          type="text"
-          id="name"
-          placeholder="Enter your full-name"
-          className="w-full border border-gray-400 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
+      {openModal && (
+        <DonateModal 
+          name={name}
+          email={email}
+          amount={amount}
+          setName={setName}
+          setEmail={setEmail}
+          setAmount={setAmount}
+          message={message}
+          submitting={submitting}
+          setOpenModal={setOpenModal}
+          handleDonate={handleDonate}
         />
+      )}
+      
 
-        {/* Email */}
-        <input
-          type="email"
-          id="email"
-          placeholder="Email Address"
-          className="w-full border border-gray-400 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        {/* Amount */}
-        <input
-          type="number"
-          placeholder="Enter amount (₦)"
-          className="w-full border border-gray-400 rounded-lg px-4 py-3 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-200"
-          value={amount}
-          onChange={(e) => setAmount(Number(e.target.value))}
-          min={100}
-        />
-        <p className="mb-3">{message}</p>
-
-        {/* Paystack Button */}
-        <button
-          disabled={submitting}
-          type="submit"
-          className={`w-full  text-white font-semibold px-6 py-4 rounded-xl shadow hover:bg-blue-600 transition
-            ${submitting ? 'bg-blue-400 hover:bg-blue-400 cursor-loader hover:bg-blue-700' : 'bg-blue-600 cursor-pointer'}
-         `}
-        >{submitting ? 'Proccessing...' : 'Donate'}</button>
-
-        <p className="mt-6 text-sm text-gray-600 mt-5">
-          100% of your donation goes into building and maintaining Pexelxus.
-        </p>
-      </form>
+      <Footer />
     </main>
   );
 }
