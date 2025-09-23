@@ -62,7 +62,6 @@ export default function DonatePage() {
         
         <p className="text-lg text-gray-700 mt-[1.5rem] px-3 leading-[1.1]">
           Help us build <span className="font-medium"> Nigeria&apos;s trusted platform </span> for airtime, data, and gift sharing, Every donation makes a difference.
-          Your donation regardless of size, fuels our ongoing efforts to develop innovative features, uphold our platform's stability, and expand our reach to users in Nigeria.
         </p>
         <button onClick={() => setOpenModal(!openModal)}
         className="px-6 py-3 rounded-full border-2 border-gray-800 hover:border-black flex items-center text-lg font-medium cursor-pointer mt-20"
