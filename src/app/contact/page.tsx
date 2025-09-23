@@ -151,7 +151,7 @@ export default function ContactPage() {
       {/* Social Media & Email */}
       <h1 className="text-2xl md:text-3xl font-bold flex items-center justify-center mb-10 mt-25">Contact</h1>
       <section className="w-full mx-auto flex flex-col items-center justify-center md:flex-row gap-20 mt-10">
-        <Link href="mailto:support@pexelxus.com" className="w-[80%] max-w-[20rem] flex flex-col bg-blue-200 p-6 rounded-3xl border-1 border-blue-400 hover:border-blue-600 transition-all duration-200">
+        <Link href="mailto:support@pexelxus.com" className="w-[85%] max-w-[20rem] flex flex-col bg-blue-200 p-6 rounded-3xl border-1 border-blue-400 hover:border-blue-600 transition-all duration-200">
           <div className="bg-blue-300 flex items-center justify-center w-12 h-12 rounded-2xl">
             <IoMailOutline className="text-blue-500 text-2xl" />
           </div>
@@ -164,7 +164,7 @@ export default function ContactPage() {
             Get help via email. We typically respond within 24 hours.
           </p>
         </Link>
-        <Link href="x.com/pexelxus" className="w-[80%] max-w-[20rem] flex flex-col bg-blue-200 p-6 rounded-3xl border-1 border-blue-400 hover:border-blue-600 transition-all duration-200">
+        <Link href="x.com/pexelxus" className="w-[85%] max-w-[20rem] flex flex-col bg-blue-200 p-6 rounded-3xl border-1 border-blue-400 hover:border-blue-600 transition-all duration-200">
           <div className="bg-blue-300 flex items-center justify-center w-12 h-12 rounded-2xl">
             <FaXTwitter className="text-blue-500 text-2xl" />
           </div>

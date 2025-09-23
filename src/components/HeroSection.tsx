@@ -77,7 +77,7 @@ const HeroSection = () => {
           }}
         className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
         >
-            <RiUserCommunityLine />
+            <RiUserCommunityLine className="text-xl text-blue-500" />
             <p className="ml-3">Connect</p>
           </motion.div>
           <motion.div
@@ -89,7 +89,7 @@ const HeroSection = () => {
             }}
           className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
           >
-            <LuSmartphoneCharging />
+            <LuSmartphoneCharging className="text-xl text-blue-500" />
             <p className="ml-3 text-">Recharge</p>
           </motion.div>
         </div>

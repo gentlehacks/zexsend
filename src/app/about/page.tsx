@@ -21,7 +21,7 @@ const About = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center px-6 font-extrabold mb-6">
             The Nigeria&apos;s Everyday Super App!
           </h1>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700 px-4">
             PexelXus is a Nigerian startup where you can{" "}
             <span className="font-medium ">
               buy airtime, data, gift friends
@@ -105,7 +105,7 @@ const About = () => {
             <h1 className="text-xl lg:text-2xl font-semibold py-2 px-4 rounded-2xl bg-gradient from-blue-500 to-blue-200 w-fit">Our Vision</h1>
           </div>
           
-          <p className="text-lg md:text-1xl text-gray-700 mt-6">
+          <p className="text-lg md:text-1xl text-gray-700 px-4 mt-6">
             At PexelXus, we believe in making technology more{" "}
             <span className="font-medium">accessible</span> and{" "}
             <span className="font-medium">empowering</span> for
