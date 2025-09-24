@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Pexelxus - Nigeria's Super App for Airtime, Data & More",
     description: "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
-    images: ["https://pexelxus.com/favicon.png"],
+    images: ["https://pexelxus.com/pexelxus-twitter-card.png"],
     creator: "@pexelxus",
   },
    manifest: "/site.webmanifest",
