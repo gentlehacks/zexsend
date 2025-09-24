@@ -8,7 +8,7 @@ const Download = () => {
     <div className="w-full h-screen p-6 bg-gray-50 text-gray-900 flex flex-col items-center justify-center">
       <div className="w-full flex items-center justify-center mt-[-3rem]">
         <motion.div 
-          animate={{backgroundColor: ['rgba(211, 211, 211, 1)', 'rgba(71, 111, 221, 0.75)']}}
+          animate={{backgroundColor: ['rgba(211, 211, 211, 1)', 'rgba(71, 111, 221, 0.66)', 'rgba(40, 211, 40, 0.56)']}}
           transition={{duration: 2, repeat: Infinity, repeatType: 'mirror', ease: 'easeInOut'}}
         className="w-[4rem] h-[4rem] p-2 bg-[rgba(230, 230, 230, 0.55)] rounded-2xl shadow-sm border-1 border-blue-200 hover:border-blue-300 overflow-hidden">
           <Image 
