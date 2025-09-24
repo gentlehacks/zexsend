@@ -57,7 +57,7 @@ export default function Footer() {
                   </span>
                 </Link>
                 <Link
-                  href="https://facebook.com/pexelxus"
+                  href="https://facebook.com/profile.php?id=61575434355333&sk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"

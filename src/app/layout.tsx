@@ -36,8 +36,9 @@ export const metadata: Metadata = {
     "VTU Nigeria",
     "wallet app",
     "fintech Nigeria",
+    "Salihu Adamu",
   ],
-  authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com" }],
+  authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com/about" }],
   creator: "PexelXus",
   publisher: "PexelXus",
   openGraph: {
