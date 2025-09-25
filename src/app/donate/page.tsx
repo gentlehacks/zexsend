@@ -60,8 +60,8 @@ export default function DonatePage() {
           <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support Pexelxus 🎁</h1>
         </div>
         
-        <p className="text-lg text-gray-700 mt-[1.5rem] px-3 leading-[1.2]">
-          Help us build <span className="font-medium"> Nigeria&apos;s trusted platform </span> for airtime, data, and gift sharing, Every donation makes a difference. Your donation regardless of size, fuels our ongoing efforts to develop innovative features, uphold our platform's stability, and expand our reach to users in Nigeria.
+        <p className="text-lg text-gray-700 mt-[1.5rem] px-3 leading-[1.3]">
+          Help us build <span className="font-medium"> Nigeria&apos;s trusted platform </span> for airtime, data, and gift sharing, Every donation makes a difference. Your donation regardless of size, fuels our ongoing efforts to develop innovative features, uphold our platform&apos;s stability, and expand our reach to users in Nigeria.
         </p>
         <button onClick={() => setOpenModal(!openModal)}
         className="px-6 py-3 rounded-full border-2 border-gray-800 hover:border-black flex items-center text-lg font-medium cursor-pointer mt-20"
