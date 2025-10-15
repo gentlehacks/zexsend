@@ -2,19 +2,19 @@ import type { Metadata } from "next";
 import Head from "next/head";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
-import { Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], 
-  variable: '--font-poppins',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/favicon.png',
+    icon: "/favicon.png",
   },
   title: "PexelXus - Buy Airtime, Data & Share",
   description:
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     "gift friends",
     "startup",
     "donate",
-    "startup Nigeria", 
-    "gift platform", 
+    "startup Nigeria",
+    "gift platform",
     "social gifting app",
     "Nigeria super app",
     "airtime app",
@@ -61,59 +61,60 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pexelxus - Nigeria's Super App for Airtime, Data & More",
-    description: "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
-    images: ["https://pexelxus.com/pexelxus-twitter-card.png"],
+    description:
+      "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
+    images: ["https://pexelxus.com/pexelxus-twitter-card-2.png"],
     creator: "@pexelxus",
   },
-   manifest: "/site.webmanifest",
+  manifest: "/site.webmanifest",
 };
 
 const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is Pexelxus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pexelxus is a Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family."
-        }
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Pexelxus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pexelxus is a Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
       },
-      {
-        "@type": "Question",
-        "name": "Is Pexelxus a Nigerian startup?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes Pexelxus is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family."
-        }
+    },
+    {
+      "@type": "Question",
+      name: "Is Pexelxus a Nigerian startup?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes Pexelxus is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
       },
-      {
-        "@type": "Question",
-        "name": "How can I join the Pexelxus waitlist?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can join the waitlist by visiting our website and submitting your name and email in the waitlist form."
-        }
+    },
+    {
+      "@type": "Question",
+      name: "How can I join the Pexelxus waitlist?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can join the waitlist by visiting our website and submitting your name and email in the waitlist form.",
       },
-      {
-        "@type": "Question",
-        "name": "How do I contact Pexelxus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can contact us through the contact form on our website or via our official email."
-        }
+    },
+    {
+      "@type": "Question",
+      name: "How do I contact Pexelxus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You can contact us through the contact form on our website or via our official email.",
       },
-      {
-        "@type": "Question",
-        "name": "Who is Founder of Pexelxus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Pexelxus is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way."
-        }
+    },
+    {
+      "@type": "Question",
+      name: "Who is Founder of Pexelxus?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Pexelxus is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way.",
       },
-    ]
-  };
+    },
+  ],
+};
 
 export default function RootLayout({
   children,
@@ -125,7 +126,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/favicon.png" />
         <script type="application/ld+json">
-        {`
+          {`
         {
           "@context": "https://schema.org",
           "@type": "Organization",
@@ -149,16 +150,14 @@ export default function RootLayout({
         `}
         </script>
       </Head>
-      <body
-        className={`${poppins.variable} antialiased`}
-      > 
+      <body className={`${poppins.variable} antialiased`}>
         <PlausibleProvider
           domain="pexelxus.com"
           trackOutboundLinks={true}
-          enabled={process.env.NODE_ENV === 'production'}
+          enabled={process.env.NODE_ENV === "production"}
         >
           <Header />
-            {children}
+          {children}
           <Script
             id="faq-schema"
             type="application/ld+json"

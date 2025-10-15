@@ -1,20 +1,17 @@
-"use client"
-import FeaturesSection from '@/components/FeaturesSection'
-import HeroSection from '@/components/HeroSection'
-import SolutionSection from '@/components/SolutionSection'
-import HowItWorkSection from '@/components/HowItWorkSection'
-import ProofAndCtaBtn from '@/components/ProofAndCtaBtn'
-import Testimonials from '@/components/Testimonials'
-import WaitlistForm from '@/components/WaitlistForm'
-import FaqSection from '@/components/FaqSection'
-import Footer from '@/components/Footer'
-
+"use client";
+import FeaturesSection from "@/components/FeaturesSection";
+import HeroSection from "@/components/HeroSection";
+import SolutionSection from "@/components/SolutionSection";
+import HowItWorkSection from "@/components/HowItWorkSection";
+import ProofAndCtaBtn from "@/components/ProofAndCtaBtn";
+import Testimonials from "@/components/Testimonials";
+import WaitlistForm from "@/components/WaitlistForm";
+import FaqSection from "@/components/FaqSection";
+import Footer from "@/components/Footer";
 
 const Home = () => {
-
   return (
-    <main className='relative w-full h-full bg-gray-50 text-gray-900'>
-      
+    <main className="relative w-full h-full bg-gray-50 text-gray-900">
       {/* Hero section */}
       <HeroSection />
 
@@ -36,13 +33,12 @@ const Home = () => {
       <WaitlistForm />
 
       {/* FAQ Section */}
-      <FaqSection />  
+      <FaqSection />
 
       {/* Footer */}
       <Footer />
-
     </main>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
