@@ -37,8 +37,9 @@ const Header = () => {
                 height={100}
                 alt="PexelXus: Gift • Share • and Earn"
                 priority
-                className="w-[120%] "
+                className="w-[20%] "
               />
+              <h1 className="font-bold text-[1.5rem] ml-3">Pexelxus</h1>
             </Link>
             
             

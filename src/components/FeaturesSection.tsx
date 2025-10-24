@@ -16,7 +16,7 @@ const FeaturesSection = () => {
           {[
             { icon: Smartphone, title: "Airtime & Data", desc: "Top up instantly with the best rates." },
             { icon: Wallet, title: "Smart Wallet", desc: "Fund once, use everywhere in PexelXus." },
-            { icon: Users, title: "Gift & Connect", desc: "Gift airtime/data & share moments." },
+            { icon: Users, title: "Gift & Connect", desc: "Gift airtime/data & share to love ones." },
             { icon: Shield, title: "Safe & Secure", desc: "Your transactions are encrypted and safe." },
             { icon: Zap, title: "Lightning Fast", desc: "Everything happens in seconds, not minutes." },
             { icon: ArrowRight, title: "More Coming Soon", desc: "We're building Nigeria's true super app." },

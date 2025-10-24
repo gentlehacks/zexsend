@@ -9,7 +9,7 @@ const Testimonials = () => {
       image: "/aliyu-suleiman.jpg",
       name: "Aliyu",
       address: "Niger state",
-      comment: "I sent airtime to my babe, she smiled like I bought her ice cream 😂 PexelXus is a new way life Saver!",
+      comment: "I gift airtime to my babe, she smiled like I bought her ice cream 😂 PexelXus is a new way life Saver!",
       category: "Graphic designer"
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       image: "/james.jpg",
       name: "James",
       address: "Lagos",
-      comment: "Bought data at 2AM for my assignment. Delivery took only 5 seconds - no lies!",
+      comment: "Bought data at 2AM for my assignment. Delivery took only 3 seconds - no lies!",
       category: "Freelancer"
     },
     {
@@ -25,8 +25,8 @@ const Testimonials = () => {
       image: "/mustapha.jpg",
       name: "Mustapha",
       address: "Niger state",
-      comment: "The App is very easy to get started and very user-friendly UI.",
-      category: "Student"
+      comment: "The App is very easy to get started and has very user-friendly UI.",
+      category: "Ui/Ux designer"
     },
     {
       id: 4,
