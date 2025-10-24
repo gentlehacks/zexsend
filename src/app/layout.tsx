@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     "social gifting app",
     "Nigeria super app",
     "airtime app",
+    "Gift friends and family app",
     "buy data Nigeria",
     "VTU Nigeria",
     "wallet app",
