@@ -25,7 +25,7 @@ const FaqSection = () => {
             <AccordionTrigger className="font-medium text-md">What is PexelXus?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
                PexelXus is a Nigerian startup where you can buy airtime, data, 
-              gift friends, and share content. We aim to make digital life 
+              gift friends, and family. We aim to make digital life 
               easier and more connected. Want to learn more? Go to 
               <Link href="/about" className="text-blue-600"> About page</Link>
             </AccordionContent>

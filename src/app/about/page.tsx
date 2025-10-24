@@ -24,11 +24,11 @@ const About = () => {
           <p className="text-lg text-gray-700 px-4">
             PexelXus is a Nigerian startup where you can{" "}
             <span className="font-medium ">
-              buy airtime, data, gift friends
+              buy airtime, data, share gift to friends
             </span>{" "}
-            and also{" "}
+            and{" "}
             <span className="font-medium ">
-              share content
+              family easily
             </span>
             . We are building a platform that&apos;s simple, reliable, and 
             made for
@@ -46,8 +46,8 @@ const About = () => {
             <p className="text-gray-100 leading-[2] mt-8">
               Hi, I&apos;m <span className="font-semibold text-gray-100 border-b-1 border-blue-500">Salihu Adamu,</span> the founder
               of PexelXus. I started this journey to make digital transactions
-              easier for Nigerians — giving you the power to connect, gift, and
-              share with simplicity and trust.
+              easier for Nigerians — giving you the power to connect, gift,
+              share to friend and family with simplicity and trust.
             </p>
 
             {/* Social Links */}
