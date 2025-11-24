@@ -25,7 +25,7 @@ export default function Footer() {
               </Link>
 
               <h5 className="mt-4 text-[#FFFFFFB2] text-base md:text-base leading-relaxed md:leading-[39px] max-w-full md:max-w-[497px]">
-                Gift Airtime • Pay Bills • Flex with Friends
+                Gift Airtime • Share gift to Love Ones
               </h5>
 
               <h2 className="mt-10  text-base md:text-[18.58px] font-medium text-white lg:hidden">
@@ -152,7 +152,7 @@ export default function Footer() {
       {/* Footer bottom text */}
       <div className="pt-4 md:pt-[32px]">
         <p className="text-[#FFFFFF99] mx-auto text-center text-sm md:text-base xl:text-[18px] leading-relaxed md:leading-[39px]">
-          PexelXus © {new Date().getFullYear()} all rights reserved.
+          ZexSend © {new Date().getFullYear()} all rights reserved.
         </p>
       </div>
     </footer>

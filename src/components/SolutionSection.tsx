@@ -8,7 +8,7 @@ import { SiSpeedtest } from "react-icons/si";
 const ProblemSection = () => {
   return (
       <motion.section className="py-20 px-6 max-w-6xl mx-auto mt-[8rem] flex flex-col items-center justify-center">
-        <h2 className="text-2xl lg:text-3xl font-semibold text-center px- mb-[5rem]">Why Nigerians Choose <span className="text-blue-500 border-b-1 border-green-600"> PexelXus </span></h2>
+        <h2 className="text-2xl lg:text-3xl font-semibold text-center px- mb-[5rem]">Why Nigerians Choose <span className="text-blue-500 border-b-1 border-green-600"> ZexSend </span></h2>
         <div className="w-full flex flex-col overflow-hidden md:w-[95%] lg:w-[85%] border-1 border-blue-300 hover:border-blue-500 rounded-3xl p-3">
           <div className="flex flex-col">
             <div className="flex items-center mb-3">
@@ -34,7 +34,7 @@ const ProblemSection = () => {
             className="relative">
               <h3 className="px-6 py-2 rounded-xl font-medium flex items-center justify-center bg-blue-200 w-fit">
                 <SiSpeedtest className="mr-2 text-blue-600 text-lg" />
-                Top-up Instantly 
+                Share Instantly 
               </h3>
               <motion.div 
                 initial={{scale: 1}}

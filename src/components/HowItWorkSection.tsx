@@ -82,10 +82,10 @@ const HowItWorkSection = () => {
                <h2 className="text-white text-2xl font-bold">3</h2>
             </div>
             <h1 className="text-lg font-semibold mt-4">
-              Push transactions
+              Share to Love ones
             </h1>
             <p className="text-md text-center text-gray-800 mt-2">
-              Buy airtime/data, gift friends, and connect.
+              Share airtime & mobile data gift to friends and love ones.
             </p>
           </div>
         </motion.div>

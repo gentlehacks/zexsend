@@ -15,20 +15,20 @@ const About = () => {
         <section className="max-w-4xl mx-auto text-center mb-30">
           <div className="w-full flex items-center justify-center ">
             <h1 className="text-lg font-extrabold rounded-2xl bg-gray-200 px-4 py-3 w-fit mb-10 ">
-              About PexelXus
+              About ZexSend
             </h1>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center px-6 font-extrabold mb-6">
             The Nigeria&apos;s Everyday Super App!
           </h1>
           <p className="text-lg text-gray-700 px-4">
-            PexelXus is a Nigerian startup where you can{" "}
+            ZexSend is a Nigerian startup where you can{" "}
             <span className="font-medium ">
-              buy airtime, data, share gift to friends
+              share airtime & mobile data as a gift 
             </span>{" "}
-            and{" "}
+            for occasions{" "}
             <span className="font-medium ">
-              family easily
+              like birthday, christmas, Eid, or just for hep someone.
             </span>
             . We are building a platform that&apos;s simple, reliable, and 
             made for
@@ -45,7 +45,7 @@ const About = () => {
             <h2 className="bg-gradient-to-r from-blue-500 to-gray-800 text-2xl font-semibold rounded-xl p-1 px-2 w-fit mt-2">Meet the Founder</h2>
             <p className="text-gray-100 leading-[2] mt-8">
               Hi, I&apos;m <span className="font-semibold text-gray-100 border-b-1 border-blue-500">Salihu Adamu,</span> the founder
-              of PexelXus. I started this journey to make digital transactions
+              of ZexSend. I started this journey to make digital transactions
               easier for Nigerians — giving you the power to connect, gift,
               share to friend and family with simplicity and trust.
             </p>
@@ -106,7 +106,7 @@ const About = () => {
           </div>
           
           <p className="text-lg md:text-1xl text-gray-700 px-4 mt-6">
-            At PexelXus, we believe in making technology more{" "}
+            At ZexSend, we believe in making technology more{" "}
             <span className="font-medium">accessible</span> and{" "}
             <span className="font-medium">empowering</span> for
             everyone. Our mission is to connect people 

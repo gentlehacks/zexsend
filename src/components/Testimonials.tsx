@@ -9,7 +9,7 @@ const Testimonials = () => {
       image: "/aliyu-suleiman.jpg",
       name: "Aliyu",
       address: "Niger state",
-      comment: "I gift airtime to my babe, she smiled like I bought her ice cream 😂 PexelXus is a new way life Saver!",
+      comment: "I gift airtime to my babe, she smiled like I bought her ice cream 😂 ZexSend is a new way life Saver!",
       category: "Graphic designer"
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       image: "/james.jpg",
       name: "James",
       address: "Lagos",
-      comment: "Bought data at 2AM for my assignment. Delivery took only 3 seconds - no lies!",
+      comment: "Bought data at 2AM for using Zexbot. Delivery took only 3 seconds - no lies!",
       category: "Freelancer"
     },
     {
@@ -41,7 +41,7 @@ const Testimonials = () => {
       image: "/desola.jpg",
       name: "Densola",
       address: "Lagos",
-      comment: "Finally a nigerian app that have great UX right. Smooth tansaction no 'pending' wahala!",
+      comment: "Finally a nigerian app that solve gifting problem. Smooth tansaction no 'pending' wahala!",
       category: "Software Developer"
     },
   ];

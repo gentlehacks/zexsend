@@ -57,7 +57,7 @@ export default function DonatePage() {
     <main className="min-h-screen bg-gray-50 text-gray-900 pt-16">
       <section className="w-full md:w-[80%] mx-auto flex flex-col items-center justify-center text-center">
         <div className="mb-10 flex items-center justify-center">
-          <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support Pexelxus 🎁</h1>
+          <h1 className="text-gray-900 text-xl font-bold bg-gray-200 px-4 py-2 rounded-2xl w-fit">Support ZexSend 🎁</h1>
         </div>
         
         <p className="text-lg text-gray-700 mt-[1.5rem] px-3 leading-loose">

@@ -18,7 +18,7 @@ const HeroSection = () => {
           transition={{duration: 0.4, delay: 0}}
         className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[12px] md:text-sm lg:text-md rounded-full bg-blue-300 border-1 border-green-400 text-gray-800 mb-2">
           <HiBadgeCheck className="text-green-600 text-[1.2rem] xs:text-[1.3rem] sm:text-[1.4rem] md:text-[1.5rem] font-medium mr-1" />
-          Gift Airtime • Pay Bills • Flex with Friends.
+          Gift Airtime • Share to love ones
         </motion.div>
         <h1 className="mt-3 text-gray-100 text-[1.8rem] sm:text-[2rem] md:text-[2.6rem] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
           The Smart Nigeria&apos;s Everyday 
@@ -29,7 +29,7 @@ const HeroSection = () => {
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
         className="text-md text-gray-300 sm:text-lg text-center lg:text-left mt-4 ">
-          The first social app that makes airtime, data, and payments fun, rewarding, and 
+          The first social app that makes airtime & mobile data gifting fun, rewarding, and 
           <span className="border-b-1 border-green-500"> stress-free.</span>
         </motion.p>
 
@@ -78,7 +78,7 @@ const HeroSection = () => {
         className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
         >
             <RiUserCommunityLine className="text-xl text-blue-500" />
-            <p className="ml-3">Connect</p>
+            <p className="ml-3">Share Gift</p>
           </motion.div>
           <motion.div
             initial={{opacity: 0, scale: 0.7}}
@@ -90,7 +90,7 @@ const HeroSection = () => {
           className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
           >
             <LuSmartphoneCharging className="text-xl text-blue-500" />
-            <p className="ml-3 text-">Recharge</p>
+            <p className="ml-3 text-">Get excited</p>
           </motion.div>
         </div>
       </div>

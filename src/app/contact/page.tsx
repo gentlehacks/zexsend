@@ -63,7 +63,7 @@ export default function ContactPage() {
           Get in Touch
         </h1>
         <p className="text-lg  text-gray-800">
-          Have questions about PexelXus or want to partner with us? 
+          Have questions about ZexSend or want to partner with us? 
           Fill out the form below or connect with us on social media.
         </p>
       </section>
