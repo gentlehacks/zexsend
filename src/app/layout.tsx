@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZexSend - Nigeria's Gift Sharing Platform,
+    title: "ZexSend - Nigeria's Gift Sharing Platform.",
     description:
       "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
     images: ["https://pexelxus.com/pexelxus-twitter-card-2.png"],
