@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about PexelXus, our mission, values, and how we’re redefining gifting and social connection.",
+    "Learn about ZexSend, our mission, values, and how we’re redefining gift sharing in Nigeria.",
 };
 
 const Layout = ({children}: {children: React.ReactNode}) => {

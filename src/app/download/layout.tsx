@@ -1,7 +1,7 @@
 import { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "PexelXus - Coming Soon",
+  title: "ZexSend - Coming Soon",
   description: "Join the waitlist for Early Access",
   keywords: [
     'airtime Nigeria',

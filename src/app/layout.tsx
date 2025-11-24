@@ -16,52 +16,52 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  title: "PexelXus - Buy Airtime, Data & Share",
+  title: "ZexSend - Share to Love Ones",
   description:
-    "PexelXus is a Nigerian startup redefining gifting, airtime/data purchases, and social sharing with trust and simplicity.",
+    "ZexSend is a Nigerian startup redefining gifting, airtime & mobile data as a gift. for occasions like birthday, christmas, Eid, just for help someone.",
   keywords: [
-    "PexelXus",
+    "ZexSend",
     "Nigeria",
-    "airtime",
-    "data",
-    "gift friends",
+    "airtime gift",
+    "mobile data gift",
+    "gifting platform",
     "startup",
     "donate",
     "startup Nigeria",
-    "gift platform",
+    "gifting platform nigeria",
     "social gifting app",
     "Nigeria super app",
     "airtime app",
     "Gift friends and family app",
     "buy data Nigeria",
-    "VTU Nigeria",
+    "Fintech Startup Nigeria",
     "wallet app",
     "fintech Nigeria",
-    "Salihu Adamu",
+    "Salihu Adamu founder",
   ],
   authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com/about" }],
-  creator: "PexelXus",
-  publisher: "PexelXus",
+  creator: "ZexSend",
+  publisher: "ZexSend",
   openGraph: {
     type: "website",
     url: "https://pexelxus.com",
-    title: "Pexelxus - Nigeria’s Super App for Airtime, Data & More",
+    title: "ZexSend - Nigeria’s Super App for Gift Sharing",
     description:
-      "The trusted Nigerian super app for airtime, data, and seamless wallet payments. Built for Nigerians, by Nigerians.",
+      "The trusted Nigerian gift sharing app for airtime & mobile data as a gifts, and seamless wallet payments. Built for Nigerians, by Nigerians.",
     siteName: "PexelXus",
     images: [
       {
         url: "https://pexelxus.com/favicon.png",
         width: 1200,
         height: 630,
-        alt: "PexelXus Preview",
+        alt: "ZexSend Preview",
       },
     ],
     locale: "en_NG",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pexelxus - Nigeria's Super App for Airtime, Data & More",
+    title: "ZexSend - Nigeria's Gift Sharing Platform,
     description:
       "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
     images: ["https://pexelxus.com/pexelxus-twitter-card-2.png"],
@@ -76,23 +76,23 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is Pexelxus?",
+      name: "What is ZexSend?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pexelxus is a Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
+        text: "ZexSend is a Nigerian startup building a platform that will allow users to buy airtime and gift to friends and Love.",
       },
     },
     {
       "@type": "Question",
-      name: "Is Pexelxus a Nigerian startup?",
+      name: "Is ZexSend a Nigerian startup?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes Pexelxus is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
+        text: "Yes ZexSend is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
       },
     },
     {
       "@type": "Question",
-      name: "How can I join the Pexelxus waitlist?",
+      name: "How can I join the ZexSend waitlist?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "You can join the waitlist by visiting our website and submitting your name and email in the waitlist form.",
@@ -100,7 +100,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How do I contact Pexelxus?",
+      name: "How do I contact ZexSend?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "You can contact us through the contact form on our website or via our official email.",
@@ -108,10 +108,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Who is Founder of Pexelxus?",
+      name: "Who is Founder of ZexSend?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pexelxus is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way.",
+        text: "ZexSend is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way.",
       },
     },
   ],
@@ -131,7 +131,7 @@ export default function RootLayout({
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Pexelxus",
+          "name": "ZexSend",
           "url": "https://pexelxus.com",
           "logo": "https://pexelxus.com/favicon.png",
           "sameAs": [

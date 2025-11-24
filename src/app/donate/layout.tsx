@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Support PexelXus",
+  title: "Support ZexSend",
   description:
-    "Support PexelXus and help us continue building a platform that makes gifting meaningful and secure.",
+    "Support ZexSend and help us continue building a platform that makes gifting meaningful and secure.",
 };
 
 const Layout = ({children}: {children: React.ReactNode}) => {
