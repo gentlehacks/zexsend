@@ -111,7 +111,7 @@ const About = () => {
             <span className="font-medium">empowering</span> for
             everyone. Our mission is to connect people 
             through simple, secure, and
-            fun digital experiences.
+            fun digital experiences. And make gift sharing to be easy, enjoying, and super excited. 😃
           </p>
         </section>
       </div>

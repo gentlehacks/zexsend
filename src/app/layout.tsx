@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   title: "ZexSend - Share to Love Ones",
   description:
-    "ZexSend is a Nigerian startup redefining gifting, airtime & mobile data as a gift. for occasions like birthday, christmas, Eid, just for help someone.",
+    "ZexSend is a Nigerian startup redefining gifting, airtime & mobile data as a gift. for occasions like birthday, christmas, Eid, or just for help someone.",
   keywords: [
     "ZexSend",
     "Nigeria",

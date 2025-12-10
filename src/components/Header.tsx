@@ -39,7 +39,7 @@ const Header = () => {
                 priority
                 className="w-[8%] "
               />
-              <h1 className="font-bold text-[1.5rem] ml-3">Pexelxus</h1>
+              <h1 className="font-bold text-[1.2rem] ml-3">ZexSend</h1>
             </Link>
             
             
