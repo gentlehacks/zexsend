@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pexelxus.com/sitemap.xml
+Sitemap: https://zexsend.com/sitemap.xml
