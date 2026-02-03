@@ -15,7 +15,7 @@ export default function Footer() {
               <Link href="/" className="flex items-center">
                 <figure className="w-35">
                   <Image
-                    alt="PexelXus logo"
+                    alt="ZexSend logo"
                     src="/zexsend-banner.png"
                     width={200}
                     height={200}
