@@ -16,7 +16,7 @@ export default function Footer() {
                 <figure className="w-40">
                   <Image
                     alt="PexelXus logo"
-                    src="/pexelxus-banner-round-blue.png"
+                    src="/zexsend-banner.png"
                     width={128}
                     height={40}
                     className="object-cover w-full"

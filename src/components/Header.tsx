@@ -32,7 +32,7 @@ const Header = () => {
             {/* Pexelxus - Logo */}
             <Link href="#" className="flex items-center">
               <Image
-                src="/favicon-circle-blue.png"
+                src="/icon-circle.png"
                 width={300}
                 height={300}
                 alt="PexelXus: Gift • Share • and Earn"
