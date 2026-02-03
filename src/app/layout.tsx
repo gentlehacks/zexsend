@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Head from "next/head";
 import PlausibleProvider from "next-plausible";
 import "./globals.css";
 import { Poppins } from "next/font/google";
@@ -18,40 +17,43 @@ export const metadata: Metadata = {
   },
   title: "ZexSend - Share to Love Ones",
   description:
-    "ZexSend is a Nigerian startup redefining gifting, airtime & mobile data as a gift. for occasions like birthday, christmas, Eid, or just for help someone.",
+    "ZexSend is Nigeria’s super app for gifting airtime & mobile data with heartfelt messages. The thoughtful way to give financial gifts.",
   keywords: [
     "ZexSend",
-    "Nigeria",
-    "airtime gift",
-    "mobile data gift",
-    "gifting platform",
-    "startup",
-    "donate",
-    "startup Nigeria",
-    "gifting platform nigeria",
-    "social gifting app",
-    "Nigeria super app",
-    "airtime app",
-    "Gift friends and family app",
-    "buy data Nigeria",
-    "Fintech Startup Nigeria",
-    "wallet app",
-    "fintech Nigeria",
-    "Salihu Adamu founder",
+    "ZexSend app",
+    "ZexSend Nigeria",
+    "airtime gifting",
+    "data gifting",
+    "financial gifts",
+    "gift sharing platform",
+    "thoughtful gifting",
+    "mobile gifting",
+    "digital gifts",
+    "gift intent",
+    "heartfelt messages",
+    "Nigerian gifting app",
+    "gift friends",
+    "gift love ones",
+    "ZexSend features",
+    "ZexSend download",
+    "ZexSend waitlist",
+    "ZexSend startup",
+    "ZexSend founder",
+    "Salihu Adamu",
   ],
-  authors: [{ name: "Salihu Adamu", url: "https://pexelxus.com/about" }],
+  authors: [{ name: "Salihu Adamu", url: "https://zexsend.com/about" }],
   creator: "ZexSend",
   publisher: "ZexSend",
   openGraph: {
     type: "website",
-    url: "https://pexelxus.com",
-    title: "ZexSend - Nigeria’s Super App for Gift Sharing",
+    url: "https://zexsend.com",
+    title: "ZexSend - Nigeria's Gift Sharing Platform.",
     description:
-      "The trusted Nigerian gift sharing app for airtime & mobile data as a gifts, and seamless wallet payments. Built for Nigerians, by Nigerians.",
-    siteName: "PexelXus",
+      "Nigeria’s super app for gifting and add intent with heartfelt messages. The thoughtful way to give financial gifts.",
+    siteName: "ZexSend",
     images: [
       {
-        url: "https://pexelxus.com/favicon.png",
+        url: "https://zexsend.com/favicon.png",
         width: 1200,
         height: 630,
         alt: "ZexSend Preview",
@@ -63,9 +65,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ZexSend - Nigeria's Gift Sharing Platform.",
     description:
-      "Fund your wallet, buy airtime & data, and gift services easily. The Nigerian super app",
-    images: ["https://pexelxus.com/pexelxus-twitter-card-2.png"],
-    creator: "@pexelxus",
+      "Nigeria’s super app for gifting and add intent with heartfelt messages. The thoughtful way to give financial gifts.",
+    images: ["https://zexsend.com/zexsend-twitter-card-2.png"],
+    creator: "@zexsend",
   },
   manifest: "/site.webmanifest",
 };
@@ -79,7 +81,7 @@ const faqSchema = {
       name: "What is ZexSend?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ZexSend is a Nigerian startup building a platform that will allow users to buy airtime and gift to friends and Love.",
+        text: "ZexSend is Nigeria’s super app for gifting airtime & mobile data with heartfelt messages. The thoughtful way to give financial gifts.",
       },
     },
     {
@@ -87,7 +89,7 @@ const faqSchema = {
       name: "Is ZexSend a Nigerian startup?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes ZexSend is based on Nigerian startup building a platform that will allow you to buy airtime and gift to friends or family.",
+        text: "Yes, ZexSend is a Nigerian startup focused on providing innovative gifting solutions.",
       },
     },
     {
@@ -124,33 +126,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="relative min-h-screen bg-[rgba(0, 0, 0, 0)]">
-      <Head>
-        <link rel="icon" href="/favicon.png" />
-        <script type="application/ld+json">
-          {`
-        {
-          "@context": "https://schema.org",
-          "@type": "Organization",
-          "name": "ZexSend",
-          "url": "https://pexelxus.com",
-          "logo": "https://pexelxus.com/favicon.png",
-          "sameAs": [
-            "https://twitter.com/pexelxus",
-            "https://linkedin.com/company/pexelxus",
-            "https://instagram.com/pexelxus"
-          ],
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "email": "support@pexelxus.com",
-            "telephone": "+2349131165467",
-            "areaServed": "NG",
-            "availableLanguage": ["English"]
-          }
-        }
-        `}
-        </script>
-      </Head>
       <body className={`${poppins.variable} antialiased`}>
         <PlausibleProvider
           domain="pexelxus.com"

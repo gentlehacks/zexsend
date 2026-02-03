@@ -24,8 +24,7 @@ const FaqSection = () => {
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-medium text-md">What is ZexSend?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-               ZexSend is a Nigerian startup that allows users to share airtime & mobile data as a gift for occasions like birthday, christmas, Eid, or just for helping someone. We aim to make Gift Sharing 
-              easier and more excited. Want to learn more? Go to 
+               ZexSend is a Nigerian startup that let users to share Thoughtful finacial gifts to friends an love ones by adding intent with heartfelt messages. Learn more on our{" "}
               <Link href="/about" className="text-blue-600"> About page</Link>
             </AccordionContent>
           </AccordionItem>
@@ -33,22 +32,18 @@ const FaqSection = () => {
         {/* Q - 02 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">How do I donate to support ZexSend?</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md"> Is this just another money transfer app?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-               You can support our mission by donating through our{" "}
-              <Link href="/donate" className="text-blue-600 hover:underline">
-                Donate Page
-              </Link>. All donations go towards building a better platform.
+              No. We wrap your transfer in thoughtfulness and flexibility, making support more meaningful.
             </AccordionContent>
           </AccordionItem>
         </Accordion>
         {/* Q - 03 */}
         <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
           <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">Is my payment secure?</AccordionTrigger>
+            <AccordionTrigger className="font-medium text-md">What if my recipient needs cash instead?</AccordionTrigger>
             <AccordionContent className="text-gray-800">
-              Yes! We use Paystack for payments, ensuring world-class security 
-              and encryption for all your transactions. ZexSend keep you secured.
+              They can instantly convert your gift intent to cash. You showed your care, they get what they need.
             </AccordionContent>
           </AccordionItem>
         </Accordion>

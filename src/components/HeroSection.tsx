@@ -21,16 +21,15 @@ const HeroSection = () => {
           Gift Airtime • Share to love ones
         </motion.div>
         <h1 className="mt-3 text-gray-100 text-[1.8rem] sm:text-[2rem] md:text-[2.6rem] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
-          The Smart Nigeria&apos;s Everyday 
-          <span className="text-green-400"> Super App </span>
+          The Thoughtful Way to Give 
+          <span className="text-green-400"> Financial Gifts.</span>
         </h1>
         <motion.p 
           initial={{opacity: 0, y: '50px'}}
           animate={{opacity: 1, y: 0}}
           transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
         className="text-md text-gray-300 sm:text-lg text-center lg:text-left mt-4 ">
-          The first social app that makes airtime & mobile data gifting fun, rewarding, and 
-          <span className="border-b-1 border-green-500"> stress-free.</span>
+          ZexSend is the thoughtful way to give financial gifts in Nigeria. Add intent with heartfelt messages, making your support more meaningful.
         </motion.p>
 
         {/* CTA */}
