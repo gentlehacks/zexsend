@@ -36,7 +36,6 @@ export const metadata: Metadata = {
     "gift love ones",
     "ZexSend features",
     "ZexSend download",
-    "ZexSend waitlist",
     "ZexSend startup",
     "ZexSend founder",
     "Salihu Adamu",
