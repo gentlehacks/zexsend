@@ -1,12 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 
 const faqData = [
   {
@@ -58,16 +52,28 @@ const FaqSection = () => {
         Got questions about ZexSend? We&apos;ve got answers.
       </motion.p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">
-        <Accordion type="single" collapsible className="w-full md:w-[70%] lg:w-[50%]">
-          {faqData.map((faq) => (
-            <AccordionItem key={faq.id} value={`item-${faq.id}`} className="border-b border-gray-400 mb-2 py-2">
-              <AccordionTrigger className="font-medium text-md text-left text-gray-800">{faq.question}</AccordionTrigger>
-              <AccordionContent className="text-gray-700">
+    
+        {faqData.map((faq, index) => (
+          <motion.div
+            key={faq.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ margin: "0px 0px -100px 0px" }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="w-full max-w-2xl mb-4"
+          >
+            <details className="group border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition-colors duration-300 cursor-pointer">
+              <summary className="flex justify-between items-center font-semibold text-lg text-gray-800 group-open:text-blue-600">
+                {faq.question}
+                <span className="transition-transform duration-300 group-open:rotate-180">▼</span>
+              </summary>
+              <p className="mt-4 text-gray-600 text-base leading-relaxed">
                 {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+              </p>
+            </details>
+          </motion.div>
+        ))}
+
         <Link href="/contact" className="mt-6 text-blue-600 hover:underline">
           Still have questions? Contact us.
         </Link>

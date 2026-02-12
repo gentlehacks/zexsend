@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://zexsend.com
+Host: https://pexelxus.com
 
 # Sitemaps
-Sitemap: https://zexsend.com/sitemap.xml
+Sitemap: https://pexelxus.com/sitemap.xml

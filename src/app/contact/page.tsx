@@ -88,7 +88,7 @@ const Contact = () => {
             We&apos;d Love to Hear From You.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            Whether you have a question, want to partner with us, or just want to say &quot;this is exactly what Nigeria needs&quot; — we're all ears.
+            Whether you have a question, want to partner with us, or just want to say &quot;this is exactly what Nigeria needs&quot; — we&apos;re all ears.
           </p>
         </motion.div>
       </section>
