@@ -5,5 +5,5 @@ Allow: /
 # Host
 Host: https://zexsend.com
 
-# Sitemaps
+# the Sitemaps
 Sitemap: https://zexsend.com/sitemap.xml
