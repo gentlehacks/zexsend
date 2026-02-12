@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { ArrowRight, Smartphone, Wallet, Users, Zap, Shield } from "lucide-react";
+import {  Smartphone, Wallet, Zap, Shield } from "lucide-react";
 
 
 const FeaturesSection = () => {

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaXTwitter, FaInstagram, FaFacebook } from "react-icons/fa6";
+import { FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -57,25 +57,25 @@ export default function Footer() {
                   </span>
                 </Link>
                 <Link
-                  href="https://facebook.com/profile.php?id=61575434355333&sk"
+                  href="https://linkedin.com/company/zexsend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"
                 >
-                  <FaFacebook className="w-6 h-6 text-blue-500" />
+                  <FaLinkedin className="w-6 h-6 text-blue-500" />
                   <span className="text-white text-sm md:text-[15.52px] leading-[18.21px]">
-                    Facebook
+                    LinkedIn
                   </span>
                 </Link>
               </div>
 
               {/* Product Hunt badge */}
               <Link
-                href="https://www.producthunt.com/products/pexelxus?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-pexelxus" 
+                href="https://www.producthunt.com/products/zexsend?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-zexsend" 
                 target="_blank"
               >
                 <Image
-                  alt="PexelXus - Buy&#0032;airtime&#0044;&#0032;data&#0044;&#0032;gift&#0032;friends&#0032;&#0038;&#0032;love&#0032;ones | Product Hunt"
+                  alt="PexelXus | Product Hunt"
                   width={250}
                   height={104}
                   src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1017599&theme=light&t=1758535860719"
@@ -108,11 +108,11 @@ export default function Footer() {
                     </p>
                   </Link>
                   <Link
-                    href="/#waitlistform"
+                    href="/#cta"
                     className="hover:opacity-80 transition-opacity"
                   >
                     <button className="bg-blue-600 rounded-full text-white  flex items-center justify-center px-4 md:px-6 py-2 md:py-3 text-sm md:text-md">
-                      Join waitlist
+                      Download App
                     </button>
                   </Link>
                 </li>
@@ -133,11 +133,11 @@ export default function Footer() {
                       Contact Us
                     </p>
                   </Link>
-                  <Link href="/donate">
+                  {/* <Link href="/donate">
                     <p className="text-[#FFFFFFB2] text-sm md:text-base leading-[39px] font-normal transition-all duration-300">
                       Donate
                     </p>
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
 
@@ -151,7 +151,7 @@ export default function Footer() {
 
       {/* Footer bottom text */}
       <div className="pt-4 md:pt-[32px]">
-        <p className="text-[#FFFFFF99] mx-auto text-center text-sm md:text-base xl:text-[18px] leading-relaxed md:leading-[39px]">
+        <p className="text-[#FFFFFF99] mx-auto text-center text-sm md:text-base xl:text-lg leading-relaxed md:leading-[39px]">
           ZexSend © {new Date().getFullYear()} all rights reserved.
         </p>
       </div>

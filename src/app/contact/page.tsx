@@ -85,10 +85,10 @@ const Contact = () => {
             </div>
           </motion.div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            We'd Love to Hear From You.
+            We&apos;d Love to Hear From You.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            Whether you have a question, want to partner with us, or just want to say "this is exactly what Nigeria needs" — we're all ears.
+            Whether you have a question, want to partner with us, or just want to say &quot;this is exactly what Nigeria needs&quot; — we're all ears.
           </p>
         </motion.div>
       </section>
@@ -189,7 +189,7 @@ const Contact = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
-              Got Questions? We've Got Answers.
+              Got Questions? We&apos;ve Got Answers.
             </h2>
             <p className="text-gray-600 text-lg text-center mb-12">
               Before you reach out, you might find your answer here:
@@ -245,7 +245,7 @@ const Contact = () => {
                 ZexSend is built for Nigerians, by someone who believes that even the smallest act of support can be wrapped in dignity and love.
               </p>
               <p className="font-semibold text-blue-600">
-                We can't wait to help you send your next thoughtful gift.
+                We can&apos;t wait to help you send your next thoughtful gift.
               </p>
               <p className="text-2xl font-semibold text-gray-900">
                 — The ZexSend Team 💙

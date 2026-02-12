@@ -1,14 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
 import Image from "next/image";
-import Link from "next/link";
-import { HiBadgeCheck } from "react-icons/hi";
-import { RiUserCommunityLine } from "react-icons/ri";
-import { LuSmartphoneCharging } from "react-icons/lu";
-// import { BiDownload } from "react-icons/bi";
-import { FaShieldAlt } from "react-icons/fa";
-import { FaAppStore, FaGooglePlay } from "react-icons/fa6";
-import { SiApple } from "react-icons/si";
 import AppStoreButton from "./AppStoreButton";
 import PlayStoreButton from "./PlayStoreButton";
 

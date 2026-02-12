@@ -6,7 +6,7 @@ import { SiApple } from "react-icons/si"
 
 const AppStoreButton = ({theme}: {theme: string}) => {
   return (
-    <Link href="/download">
+    <Link href="/#cta">
       <motion.button
         whileHover={{ y: "4px" }}
         whileTap={{ y: "4px" }}

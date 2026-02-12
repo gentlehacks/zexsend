@@ -53,10 +53,10 @@ const About = () => {
           </motion.div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-6">
-            We're on a Mission to Make Giving More Thoughtful.
+            We&apos;re on a Mission to Make Giving More Thoughtful.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-            ZexSend was born from a simple observation: sending money to help should feel as good as receiving it. We're building a way for Nigerians to wrap their support in care, purpose, and flexibility.
+            ZexSend was born from a simple observation: sending money to help should feel as good as receiving it. We&apos;re building a way for Nigerians to wrap their support in care, purpose, and flexibility.
           </p>
         </motion.div>
       </section>
@@ -75,7 +75,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
               <p>
-                Like many Nigerians, our founder knows what it's like to send "dash" to family and hope it's used well. You want to help with Mama's electricity bill, but once the money leaves your account, you're left guessing.
+                Like many Nigerians, our founder knows what it's like to send &quot;dash&quot; to family and hope it&apos;s used well. You want to help with Mama&apos;s electricity bill, but once the money leaves your account, you&apos;re left guessing.
               </p>
               <p>
                 We asked ourselves: What if support could carry intention without forcing it? What if the recipient could see exactly what you hoped for—and still have the freedom to use it for what truly matters right now?
@@ -102,7 +102,7 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
-                ZexSend isn't another payment app. It's a new way to send financial support—one that bridges the gap between what you want to help with and what your loved one actually needs.
+                ZexSend isn&apos;t another payment app. It&apos;s a new way to send financial support—one that bridges the gap between what you want to help with and what your loved one actually needs.
               </p>
               <div className="bg-white p-8 rounded-lg">
                 <p className="font-semibold text-gray-800 mb-4">
@@ -198,13 +198,13 @@ const About = () => {
               </h2>
               <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Hi, I'm <span className="font-semibold text-gray-800">Salihu Adamu</span>. I built ZexSend because I believe technology's highest purpose is to bring people closer—not just move money faster.
+                  Hi, I&apos;m <span className="font-semibold text-gray-800">Salihu Adamu</span>. I built ZexSend because I believe technology's highest purpose is to bring people closer—not just move money faster.
                 </p>
                 <p>
                   I spent years building software for others, but I wanted to create something that makes my own mother smile when she receives help from my sister abroad. Something that turns a bank transfer into a moment of connection.
                 </p>
                 <p className="font-semibold text-blue-600">
-                  ZexSend is that something. And I'm just getting started.
+                  ZexSend is that something. And I&apos;m just getting started.
                 </p>
               </div>
             </div>

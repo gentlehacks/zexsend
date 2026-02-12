@@ -5,12 +5,10 @@ import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import MobileNav from "@/components/MobileNav";
-import { CgGift } from "react-icons/cg";
 import { RiMenu3Fill } from "react-icons/ri";
 
 const Header = () => {
 
-  const route = useRouter()
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const pathname = usePathname()
 
@@ -70,11 +68,11 @@ const Header = () => {
                     {link.name}
                   </span>
 
-                 
+
                 </Link>
               )
             })}
-            
+
           </nav>
           <div className='flex items-center space-x-4'>
             {/* Moile Nav Icon */}
@@ -87,12 +85,15 @@ const Header = () => {
             </motion.div>
 
           </div>
-          <button className="px-6 py-3 rounded-full bg-yellow-400 text-gray-800 text-md font-normal  ml-6">
-            Download
-          </button>
-        </div>
-      </ul>
-    </motion.header>
+          <Link href="/#cta">
+            <button className="px-6 py-3 rounded-full bg-yellow-400 text-gray-800 text-md font-normal  ml-6">
+              Download
+            </button>
+          </Link>
+
+      </div>
+    </ul>
+    </motion.header >
 
   )
 }

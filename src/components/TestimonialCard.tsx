@@ -29,7 +29,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ id, name, category, c
           className="w-24 h-24 rounded-full mx-auto mb-4"
         />
         <div className="text-center">
-          <p className="text-gray-600 italic">"{comment}"</p>
+          <p className="text-gray-600 italic">&quot;{comment}&quot;</p>
           <h3 className="text-lg font-semibold mt-4">{name}</h3>
           <p className="text-gray-500">{category}</p>
         </div>
