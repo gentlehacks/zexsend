@@ -1,74 +1,44 @@
 "use client"
-import { motion, AnimatePresence } from "framer-motion"
-import Image from 'next/image'
-import React from 'react'
-import { FaStar } from 'react-icons/fa'
+import { AnimatePresence, motion } from "framer-motion"
+import Image from "next/image";
 
-type CardProps = {
+interface TestimonialCardProps {
   id: number;
-  image: string;
-  name: string,
-  address: string,
-  comment: string,
+  name: string;
   category: string;
+  comment: string;
+  image: string;
 }
 
-const TestimonialCard = ({
-  id,
-  image,
-  name,
-  address,
-  comment,
-  category,
-}: CardProps) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ id, name, category, comment, image }) => {
   return (
+
     <AnimatePresence>
-      <motion.div 
-        key={id}
-        initial={{opacity: 0, scale: 0.8}}
-        whileInView={{opacity: 1, scale: 1}}
-        exit={{opacity: 0, scale: 0.8}}
-        transition={{duration: 0.5}}
-        className="w-[90%] sm:w-[80%] md:w-[30rem] lg:w-[40rem] flex flex-col bg-white border-1 border-gray-200 p-4 rounded-lg shadow-md"
+      <motion.div key={id} className="w-full max-w-md bg-white rounded-lg shadow-md p-6 mx-auto"
+        initial={{ opacity: 0, scale: 0.95, y: 50 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{  }}
+        transition={{ duration: 0.5, delay: id * 0.2 }}
       >
-        <div className=" flex items-center gap-[3px]">
-          {[1,2,3,4,5].map((_, id) => (
-            <FaStar 
-              key={id}
-              className="text-md text-yellow-400"
-            />
-          ))}
-        </div>
-        <div className="mt-3">
-          <p className="text-[1rem]">
-            {comment}
-          </p>
-        </div>
-        <div className="flex items-center w-full justify-between mt-3">
-          <div className="flex items-center">
-            <div className="w-[2.5rem] h-[2.5rem] rounded-full border-2 border-gray-300 overflow-hidden flex items-center justify-center">
-              <Image
-                src={image} 
-                alt={name}
-                width={100}
-                height={100}
-                priority
-              />
-            </div>
-            <div className="ml-3 flex items-center">
-              <p className="text-[0.9rem] text-center font-medium text-gray-900">
-                @<span className="">{name}</span> -
-                <span className="ml-2">{address}</span>
-              </p>
-            </div>
-          </div>
-          <p className="text-[0.7rem] text-gray-800">
-            {category}
-          </p>
+        <Image
+          src={image}
+          alt={name}
+          width={200}
+          height={200}
+          priority={true}
+          className="w-24 h-24 rounded-full mx-auto mb-4"
+        />
+        <div className="text-center">
+          <p className="text-gray-600 italic">"{comment}"</p>
+          <h3 className="text-lg font-semibold mt-4">{name}</h3>
+          <p className="text-gray-500">{category}</p>
         </div>
       </motion.div>
     </AnimatePresence>
-  );
-}
 
-export default TestimonialCard
+  );
+};
+
+
+
+export default TestimonialCard;

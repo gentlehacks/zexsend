@@ -1,11 +1,10 @@
 "use client";
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
-import SolutionSection from "@/components/SolutionSection";
+import CTA from "@/components/CTA";
 import HowItWorkSection from "@/components/HowItWorkSection";
-import ProofAndCtaBtn from "@/components/ProofAndCtaBtn";
+import WhyItWork from "@/components/WhyItWork";
 import Testimonials from "@/components/Testimonials";
-import WaitlistForm from "@/components/WaitlistForm";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 
@@ -21,19 +20,16 @@ const Home = () => {
       {/* How it Works Section */}
       <HowItWorkSection />
 
-      {/* ProblemSection */}
-      <SolutionSection />
 
-      <ProofAndCtaBtn />
+      <WhyItWork />
 
       {/* Testimonials */}
       <Testimonials />
 
-      {/* Wailist FOrm */}
-      <WaitlistForm />
-
       {/* FAQ Section */}
       <FaqSection />
+
+      <CTA />
 
       {/* Footer */}
       <Footer />

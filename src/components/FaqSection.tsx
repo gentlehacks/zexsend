@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import Link from "next/link"
 import {
   Accordion,
@@ -7,74 +8,70 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+const faqData = [
+  {
+    id: 1,
+    question: "What is ZexSend?",
+    answer: "ZexSend is a Nigerian startup that let users to share Thoughtful finacial gifts to friends an love ones by adding intent with heartfelt messages. Learn more on our About page",
+  },
+  {
+    id: 2,
+    question: "How does ZexSend work?",
+    answer: "ZexSend allows users to send financial gifts with personalized messages. You can choose the amount, add a heartfelt message, and send it to your loved ones. The recipient can then redeem the gift through our app.",
+  },
+  {
+    id: 3,
+    question: "Is ZexSend secure?",
+    answer: "Yes, ZexSend uses industry-standard security measures to protect your information and transactions. We prioritize the safety and privacy of our users.",
+  },
+  {
+    id: 4,
+    question: "Can I use ZexSend internationally?",
+    answer: "Currently, ZexSend is focused on serving users within Nigeria. However, we are exploring options for international expansion in the future.",
+  },
+  {
+    id: 5,
+    question: "How can I contact ZexSend support?",
+    answer: "You can contact our support team by visiting our Contact page on the website or by emailing us at support@zexsend.com",
+  },
+]
+
 const FaqSection = () => {
   return (
     <div 
       id="faq"
     className="w-full flex flex-col items-center justify-center mt-[9rem]">
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-center">
-        Frequently Asked <span className="border-b-1 border-blue-600"> Question </span>
-      </h1>
-       <p className="mt-2 text-gray-700 text-gray-700 px-6 text-center">
+      <motion.h1 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{margin: "0px 0px -100px 0px"}}
+          transition={{ duration: 0.5 }}
+      className="text-3xl md:text-5xl text-center leading-[1.2] font-semibold px-6 md:px-22 ">
+        Frequently Asked Question 
+      </motion.h1>
+       <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{margin: "0px 0px -100px 0px"}}
+          transition={{ duration: 0.5, delay: 0.3 }}
+       className="mt-2 text-gray-700 text-center text-md md:text-lg lg:text-lg">
         Got questions about ZexSend? We&apos;ve got answers.
-      </p>
+      </motion.p>
       <div className="w-full flex flex-col items-center justify-center mt-[4rem]">
-        {/* Q - 01 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">What is ZexSend?</AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-               ZexSend is a Nigerian startup that let users to share Thoughtful finacial gifts to friends an love ones by adding intent with heartfelt messages. Learn more on our{" "}
-              <Link href="/about" className="text-blue-600"> About page</Link>
-            </AccordionContent>
-          </AccordionItem>
+        <Accordion type="single" collapsible className="w-full md:w-[70%] lg:w-[50%]">
+          {faqData.map((faq) => (
+            <AccordionItem key={faq.id} value={`item-${faq.id}`} className="border-b border-gray-400 mb-2 py-2">
+              <AccordionTrigger className="font-medium text-md text-left text-gray-800">{faq.question}</AccordionTrigger>
+              <AccordionContent className="text-gray-700">
+                {faq.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
         </Accordion>
-        {/* Q - 02 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md"> Is this just another money transfer app?</AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-              No. We wrap your transfer in thoughtfulness and flexibility, making support more meaningful.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        {/* Q - 03 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">What if my recipient needs cash instead?</AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-              They can instantly convert your gift intent to cash. You showed your care, they get what they need.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        
-        {/* Q - 04 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">Can I join the waitlist?</AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-              Absolutely! You can{" "}
-              <Link href="/#waitlistform" className="text-blue-600 hover:underline">
-                join our waitlist now
-              </Link>{" "}
-              and be the first to know when we launch new features.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-        {/* Q - 05 */}
-        <Accordion type="single" collapsible className='px-4 w-[93%] sm:w-[93%] md:w-[85%] lg:w-[70%] border-2 border-gray-300 rounded-xl transition-all duration-200 mb-3'>
-          <AccordionItem value="item-1">
-            <AccordionTrigger className="font-medium text-md">When will ZexSend launch?</AccordionTrigger>
-            <AccordionContent className="text-gray-800">
-              ZexSend is under building right now and will be available on App Store & Play Store soon. And also through a Whatsapp chatbot for easy access for everyone. 
-              <Link href="/#waitlistform" className="text-blue-600 hover:underline">
-                join our waitlist
-              </Link>{" "}
-              to be one of those to know when we launch and get your Early user reward 🎁.
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      </div>
+        <Link href="/contact" className="mt-6 text-blue-600 hover:underline">
+          Still have questions? Contact us.
+        </Link>
+     </div>
     </div>
   )
 }

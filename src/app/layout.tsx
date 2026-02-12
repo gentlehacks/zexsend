@@ -124,7 +124,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative min-h-screen bg-[rgba(0, 0, 0, 0)]">
+    <html lang="en" className="relative min-h-screen bg-gray-50">
       <body className={`${poppins.variable} antialiased`}>
         <PlausibleProvider
           domain="pexelxus.com"

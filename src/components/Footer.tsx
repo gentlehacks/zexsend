@@ -6,7 +6,7 @@ import { FaXTwitter, FaInstagram, FaFacebook } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-    <footer id="footer" className="relative py-6 pt-10 md:py-[24px] bg-gray-900 mt-[5rem]">
+    <footer id="footer" className="relative py-6 pt-10 md:py-[24px] bg-[#050a02] mt-[5rem]">
       <div className="relative">
         {/* Main container */}
         <div className="relative w-full max-w-[1731px] mx-auto px-4 sm:px-6 md:px-[32px] xl:px-[96px] mt-10">
@@ -25,7 +25,7 @@ export default function Footer() {
               </Link>
 
               <h5 className="mt-4 text-[#FFFFFFB2] text-base md:text-base leading-relaxed md:leading-[39px] max-w-full md:max-w-[497px]">
-                Gift Airtime • Share gift to Love Ones
+                kkek
               </h5>
 
               <h2 className="mt-10  text-base md:text-[18.58px] font-medium text-white lg:hidden">
@@ -35,7 +35,7 @@ export default function Footer() {
               {/* Social icons */}
               <div className="flex flex-wrap gap-4 md:gap-[46px] items-center">
                 <Link
-                  href="https://x.com/pexelxus"
+                  href="https://x.com/zexsend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"
@@ -46,7 +46,7 @@ export default function Footer() {
                   </span>
                 </Link>
                 <Link
-                  href="https://instagram.com/pexelxus"
+                  href="https://instagram.com/zexsend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"

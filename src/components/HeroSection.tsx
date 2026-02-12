@@ -1,5 +1,5 @@
 "use client"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
 import { HiBadgeCheck } from "react-icons/hi";
@@ -7,95 +7,56 @@ import { RiUserCommunityLine } from "react-icons/ri";
 import { LuSmartphoneCharging } from "react-icons/lu";
 // import { BiDownload } from "react-icons/bi";
 import { FaShieldAlt } from "react-icons/fa";
+import { FaAppStore, FaGooglePlay } from "react-icons/fa6";
+import { SiApple } from "react-icons/si";
+import AppStoreButton from "./AppStoreButton";
+import PlayStoreButton from "./PlayStoreButton";
 
 const HeroSection = () => {
   return (
-    <div className="bg-gradient-to-b from-[#0f172a] via-[#1e293b] to-black lg:h-screen w-full flex flex-col items-center sm:flex-col md:flex-col lg:flex-row justify-center p-4 pt-[4rem] pb-15 lg:pb-0 lg:pt-0 bg-gradient-hero">
-      <div className="w-[90%] flex flex-col items-center justify-center lg:pl-[5%]">
-        <motion.div 
-          initial={{opacity: 0, scale: 0.8}}
-          animate={{opacity: 1, scale: 1}}
-          transition={{duration: 0.4, delay: 0}}
-        className="flex items-center justify-center px-2 py-1 text-[13px] text-[10px] sm:text-[12px] md:text-sm lg:text-md rounded-full bg-blue-300 border-1 border-green-400 text-gray-800 mb-2">
-          <HiBadgeCheck className="text-green-600 text-[1.2rem] xs:text-[1.3rem] sm:text-[1.4rem] md:text-[1.5rem] font-medium mr-1" />
-          Gift Airtime • Share to love ones
-        </motion.div>
-        <h1 className="mt-3 text-gray-100 text-[1.8rem] sm:text-[2rem] md:text-[2.6rem] lg:text-[2.2rem] font-semibold  text-center lg:text-left">
-          The Thoughtful Way to Give 
-          <span className="text-green-400"> Financial Gifts.</span>
+    <div className="pt-12   relative flex flex-col  items-center justify-center pb-0 px-5">
+      <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
+        <div className="absolute inset-0 h-full w-full bg-hero-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]">
+        </div>
+      </div>
+      <div className="w-[90%] md:w-[70%] flex flex-col items-center justify-center ">
+        <h1 className="text-gray-800 text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3rem] font-semibold  text-center ">
+          Don&apos;t Just Send Money. Send Thoughtful Support.
         </h1>
-        <motion.p 
-          initial={{opacity: 0, y: '50px'}}
-          animate={{opacity: 1, y: 0}}
-          transition={{duration: 1, type: 'spring', stiffness: 100, delay: 0.5}}
-        className="text-md text-gray-300 sm:text-lg text-center lg:text-left mt-4 ">
-          ZexSend is the thoughtful way to give financial gifts in Nigeria. Add intent with heartfelt messages, making your support more meaningful.
+        <motion.p
+          initial={{ opacity: 0, y: '50px' }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          className="text-md md:text-lg text-center px-5 md:px-12 text-gray-600  mt-4 ">
+          With ZexSend, wrap your Naira in care. Choose a purpose for your gift and let your loved one decide to use it as you hoped or get it as cash. It&apos;s meaningful help that always fits.
         </motion.p>
 
         {/* CTA */}
-        <div className="mt-[3rem] w-full flex items-center justify-center md:mt-[4rem] lg:mt-[3rem]">
-          <Link href="/download">
-            <motion.button 
-              whileHover={{y: "4px"}}
-              whileTap={{y: "4px"}}
-              transition={{duration: 0.2}}
-            className="py-3 px-6 rounded-full bg-blue-700 hover:bg-blue-800 hover:shadow-xl text-gray-100 flex items-center text-[0.9rem] shadow-lg justify-center text-sm transition-all duration-100 cursor-pointer">
-              {/* <BiDownload className="mr-1 text-xl" /> */}
-              Join the Waitlist
-            </motion.button>
-          </Link>
+        <div className="mt-[2rem] w-full flex items-center justify-center gap-5 md:mt-[4rem] lg:mt-[3rem]">
+          <AppStoreButton theme="dark" />
+          <PlayStoreButton theme="dark" />
         </div>
-        <p className="mt-[5rem] text-gray-100 flex items-center">
-          <FaShieldAlt className="text-xl mr-2" /> 
-          Secured by Paystack
-        </p>
       </div>
-      <div className="w-full flex flex-col items-center justify-center lg:mt-[-5rem]">
+      <div className="w-full flex flex-col items-center justify-center mt-[3rem]">
         {/* Mockups */}
         <motion.div className="relative w-[100%] flex items-center justify-center mt-[2rem] boder-gray-400"
-          initial={{y: "200px", opacity: 0}}
-          animate={{y: 0, opacity: 1}}
-          transition={{duration: 1, ease: 'easeOut', delay: 1}}
+          initial={{ y: "100px", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
         >
-          <Image 
-            src="/phone-mockups.svg" 
-            alt="Phone Mockups" 
-            width={100} 
-            height={100} 
-            priority
-            className="w-[100%] sm:w-[90%] md:w-[80%] lg:w-[80%] max-w-[40rem] max-h-[40rem]" 
+          <Image
+            src="/mockup.svg"
+            alt="ZexSend Mockup"
+            width={360}
+            height={340}
+            priority={true}
+            className="w-[80%] sm:w-[70%] md:w-[60%] max-w-[25rem]"
           />
         </motion.div>
-        <div className="w-full flex items-center justify-between px-[1.5rem] sm:px-[4rem] md:px-[7rem] lg:px-[3rem] ">
-        <motion.div
-          initial={{opacity: 0, scale: 0.7}}
-          whileInView={{opacity: 1, scale: 1}}
-          transition={{duration: 1, type: 'spring', stiffness: 200}}
-          viewport={{ 
-            margin: "0px 0px -12% 0px"
-          }}
-        className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
-        >
-            <RiUserCommunityLine className="text-xl text-blue-500" />
-            <p className="ml-3">Share Gift</p>
-          </motion.div>
-          <motion.div
-            initial={{opacity: 0, scale: 0.7}}
-            whileInView={{opacity: 1, scale: 1}}
-            transition={{duration: 1, type: 'spring', stiffness: 200, delay: 0.5}}
-            viewport={{ 
-              margin: "0px 0px -12% 0px" 
-            }}
-          className="px-2 py-1 bg-gray-800 text-gray-100 flex items-center justify-center rounded-xl"
-          >
-            <LuSmartphoneCharging className="text-xl text-blue-500" />
-            <p className="ml-3 text-">Get excited</p>
-          </motion.div>
-        </div>
       </div>
-      
 
-      
+
+
 
     </div>
   )
