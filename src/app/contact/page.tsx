@@ -55,7 +55,7 @@ const Contact = () => {
       icon: FaTwitter,
       label: "Twitter/X",
       handle: "@zexsend",
-      url: "https://twitter.com/zexsend"
+      url: "https://twitter.com/myzexsend"
     },
     {
       icon: FaLinkedin,

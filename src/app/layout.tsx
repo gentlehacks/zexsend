@@ -13,11 +13,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon-black.png",
   },
-  title: "ZexSend - Share to Love Ones",
+  title: "ZexSend - Share thoughtfull support",
   description:
-    "ZexSend is Nigeria’s super app for gifting airtime & mobile data with heartfelt messages. The thoughtful way to give financial gifts.",
+    "ZexSend is Nigeria's first social gift platform that bridges the gap between what you want to help with and what they actually need. Choose a purpose, add a note, and let them decide. It's support that finally fits.",
   keywords: [
     "ZexSend",
     "ZexSend app",

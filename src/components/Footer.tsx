@@ -25,7 +25,7 @@ export default function Footer() {
               </Link>
 
               <h5 className="mt-4 text-[#FFFFFFB2] text-base md:text-base leading-relaxed md:leading-[39px] max-w-full md:max-w-[497px]">
-                kkek
+                Your money, wrapped in thoughtfulness.
               </h5>
 
               <h2 className="mt-10  text-base md:text-[18.58px] font-medium text-white lg:hidden">
@@ -35,7 +35,7 @@ export default function Footer() {
               {/* Social icons */}
               <div className="flex flex-wrap gap-4 md:gap-[46px] items-center">
                 <Link
-                  href="https://x.com/zexsend"
+                  href="https://x.com/myzexsend"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 hover:text-white transition-colors"

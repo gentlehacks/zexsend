@@ -12,9 +12,13 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="w-[90%] md:w-[70%] flex flex-col items-center justify-center ">
-        <h1 className="text-gray-800 text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3rem] font-semibold  text-center ">
+        <motion.h1
+          initial={{ opacity: 0, y: '50px' }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1}}
+          className="text-gray-800 text-[2rem] sm:text-[2.5rem] md:text-[3rem] lg:text-[3rem] font-semibold  text-center ">
           Don&apos;t Just Send Money. Send Thoughtful Support.
-        </h1>
+        </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: '50px' }}
           animate={{ opacity: 1, y: 0 }}
