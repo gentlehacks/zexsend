@@ -39,7 +39,7 @@ const Header = () => {
               src="/icon-circle.png"
               width={300}
               height={300}
-              alt="PexelXus: Gift • Share • and Earn"
+              alt="ZexSend - Send thoughtfull support"
               priority
               className="w-[8%] "
             />

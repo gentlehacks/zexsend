@@ -25,7 +25,7 @@ export default function Footer() {
               </Link>
 
               <h5 className="mt-4 text-[#FFFFFFB2] text-base md:text-base leading-relaxed md:leading-[39px] max-w-full md:max-w-[497px]">
-                Your money, wrapped in thoughtfulness.
+                Your Money, Wrapped in Thoughtfulness.
               </h5>
 
               <h2 className="mt-10  text-base md:text-[18.58px] font-medium text-white lg:hidden">
@@ -91,6 +91,14 @@ export default function Footer() {
                   Links
                 </p>
                 <li className="flex flex-col gap-5 md:gap-[20px] mt-2 md:mt-[18px]">
+                  <Link
+                    href="/#"
+                    className="hover:opacity-80 transition-opacity"
+                  >
+                    <p className="text-[#FFFFFFB2] text-sm md:text-base leading-relaxed md:leading-[39px]">
+                      Home
+                    </p>
+                  </Link>
                   <Link
                     href="#features"
                     className="hover:opacity-80 transition-opacity"
