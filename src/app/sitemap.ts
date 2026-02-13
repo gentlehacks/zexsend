@@ -20,11 +20,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "daily",
       priority: 0.7,
     },
-    {
-      url: "https://zexsend.com/donate",
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.9,
-    },
   ];
 }
