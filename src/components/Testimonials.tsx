@@ -55,14 +55,14 @@ const Testimonials = () => {
 
   return (
     <div className="w-full flex flex-col items-center justify-center mt-[10rem]">
-      <motion.h1 className="text-3xl md:text-5xl text-center leading-[1.2] font-semibold px-6 md:px-22 "
+      <motion.h1 className="text-3xl md:text-5xl px-6 text-center leading-[1.2] font-semibold px-6 md:px-22 "
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         What Early Users Say
       </motion.h1>
-      <motion.p className="mt-2 text-gray-700 text-center text-md md:text-lg lg:text-lg"
+      <motion.p className="mt-2 px-6 text-gray-700 text-center text-md md:text-lg lg:text-lg"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}

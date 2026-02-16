@@ -18,7 +18,7 @@ const HowItWorkSection = () => {
       </h1>
       <div className="w-full flex flex-col px-6 md:px-8 items-center justify-center lg:gap-2 mt-[5rem]">
         {/* Step 01 */}
-        <motion.div className="w-[70%] flex flex-col items-center justify-center"
+        <motion.div className="w-[85%] flex flex-col items-center justify-center"
           variants={StepsVariants}
           initial="initial"
           whileInView="animate"
@@ -31,7 +31,7 @@ const HowItWorkSection = () => {
             <div className="w-[4rem] h-[4rem] rounded-full bg-blue-500 flex items-center justify-center">
               <h2 className="text-white text-2xl font-bold">1</h2>
             </div>
-            <h1 className="text-xl font-semibold mt-6">
+            <h1 className="text-xl font-semibold text-center mt-6">
               You Choose & Personalize
             </h1>
             <p className="text-lg text-center text-gray-400 mt-2 max-w-[30rem]">
@@ -44,7 +44,7 @@ const HowItWorkSection = () => {
           </div>
         </motion.div>
         {/* Step 02 */}
-        <motion.div className="w-[70%] flex flex-col items-center justify-center"
+        <motion.div className="w-[85%] flex flex-col items-center justify-center"
           variants={StepsVariants}
           initial="initial"
           whileInView="animate"
@@ -57,7 +57,7 @@ const HowItWorkSection = () => {
             <div className="w-[4rem] h-[4rem] rounded-full bg-blue-500 flex items-center justify-center">
               <h2 className="text-white text-2xl font-bold">2</h2>
             </div>
-            <h1 className="text-xl font-semibold mt-4">
+            <h1 className="text-xl font-semibold text-center mt-6">
               They Receive & Feel the Care
             </h1>
             <p className="text-lg text-center text-gray-400 mt-2 max-w-[30rem]">
@@ -70,7 +70,7 @@ const HowItWorkSection = () => {
           </div>
         </motion.div>
         {/* Step 03 */}
-        <motion.div className="w-[70%] flex flex-col items-center justify-center"
+        <motion.div className="w-[85%] flex flex-col items-center justify-center"
           variants={StepsVariants}
           initial="initial"
           whileInView="animate"
@@ -83,7 +83,7 @@ const HowItWorkSection = () => {
             <div className="w-[4rem] h-[4rem] rounded-full bg-blue-500 flex items-center justify-center">
               <h2 className="text-white text-2xl font-bold">3</h2>
             </div>
-            <h1 className="text-xl font-semibold mt-4">
+            <h1 className="text-xl font-semibold text-center mt-6">
               They Use It Their Way
             </h1>
             <p className="text-lg text-center text-gray-400 mt-2 max-w-[30rem]">

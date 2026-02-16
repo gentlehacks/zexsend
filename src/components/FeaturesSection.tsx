@@ -7,22 +7,22 @@ const FeaturesSection = () => {
   return (
     <div
       id="features"
-      className="mt-[10rem] w-full overflow-x-hidden text-gray-800">
+      className="mt-[10rem] w-full text-gray-800">
       <div className="flex flex-col items-center justify-center px-6 md:px-12">
         <motion.h1
-          initial={{ y: "100px", opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true, margin: "0px 0px -15% 0px" }} // Only check bottom 25%
-          transition={{ duration: 1, delay: 0.5 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 0.5 }}
           className="text-3xl md:text-5xl text-center leading-[1.2] font-semibold px-6 md:px-22 ">
           Why Guess When You Can Gift with Purpose?
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "0px 0px -15% 0px" }} // Only check bottom 25%
-          transition={{ duration: 0.5, delay: 0.4 }}
-        className="px-8 md:px-[20%] text-center text-gray-600 text-md md:text-lg mt-4 mb-[5rem]">
+          viewport={{ margin: "0px 0px -100px 0px" }}
+          transition={{ duration: 0.5 }}
+        className="px-4 md:px-[20%] text-center text-gray-600 text-md md:text-lg mt-4 mb-[5rem]">
           Sending plain cash is a guess. Will it be used for the bill you wanted to help with? ZexSend turns that guess into a thoughtful suggestion, giving your support clear intention while respecting their real-time needs.
         </motion.p>
         <motion.div
@@ -30,7 +30,7 @@ const FeaturesSection = () => {
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, margin: "0px 0px -15% 0px" }} // Only check bottom 25%
           transition={{ duration: 1, delay: 0.5 }}
-          className="grid lg:grid-cols-2 gap-15 pb-6 overflow-y-hidden">
+          className="grid lg:grid-cols-2 gap-15 pb-6">
           {[
             {
               title: "Purposeful Gifting",

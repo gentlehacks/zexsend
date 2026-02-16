@@ -28,6 +28,7 @@ const faqData = [
     question: "How can I contact ZexSend support?",
     answer: "You can contact our support team by visiting our Contact page on the website or by emailing us at support@zexsend.com",
   },
+  
 ]
 
 const FaqSection = () => {
@@ -60,7 +61,7 @@ const FaqSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ margin: "0px 0px -100px 0px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="w-full max-w-2xl mb-4"
+            className="w-[90%] max-w-2xl mb-4"
           >
             <details className="group border border-gray-200 rounded-lg p-4 hover:border-blue-500 transition-colors duration-300 cursor-pointer">
               <summary className="flex justify-between items-center font-semibold text-lg text-gray-800 group-open:text-blue-600">

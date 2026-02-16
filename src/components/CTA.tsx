@@ -4,7 +4,7 @@ import PlayStoreButton from "./PlayStoreButton"
 
 const CTA: React.FC = () => {
     return (
-        <section id="cta" className="mt-10 mb-5 lg:my-20 px-6 md:px-8 lg:px-16">
+        <section id="cta" className="mt-10 mb-5 lg:my-20 px-4 md:px-8 lg:px-16">
             <div className="relative h-full w-full z-10 mx-auto py-12 sm:py-20">
                 <div className="h-full w-full">
                     <div className="rounded-3xl opacity-95 absolute inset-0 -z-10 h-full w-full bg-[#050a02] bg-[linear-gradient(to_right,#12170f_1px,transparent_1px),linear-gradient(to_bottom,#12170f_1px,transparent_1px)] bg-[size:6rem_4rem]">
@@ -16,9 +16,9 @@ const CTA: React.FC = () => {
 
                         <p className="mx-auto max-w-xl md:px-5">Download ZexSend and start sending thoughtful support today.</p>
 
-                        <div className="mt-8 flex flex-col sm:flex-row items-center sm:gap-4">
-                        <AppStoreButton theme="light" />
-                        <PlayStoreButton theme="light" />
+                        <div className="mt-15 md:mt-10 flex flex-col sm:flex-row items-center gap-4">
+                            <AppStoreButton theme="light" />
+                            <PlayStoreButton theme="light" />
                         </div>
                     </div>
                 </div>

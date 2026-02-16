@@ -41,9 +41,9 @@ const Header = () => {
               height={300}
               alt="ZexSend - Send thoughtfull support"
               priority
-              className="w-[8%] "
+              className="w-[2rem] "
             />
-            <h1 className="font-bold text-[1.2rem] ml-3">ZexSend</h1>
+            <h1 className="font-bold text-[1.5rem] ml-3 text-gray-800">ZexSend</h1>
           </Link>
 
 
@@ -76,16 +76,17 @@ const Header = () => {
           </nav>
           <div className='flex items-center space-x-4'>
             {/* Moile Nav Icon */}
-            <motion.div
+            <motion.button
               initial={{ scale: 1 }}
-              whileTap={{ scale: [1, 1.1, 1] }}
+              whileTap={{ scale: [0.8, 1.1, 1] }}
+              transition={{duration:0.4}}
               onClick={() => setIsOpenMenu(!isOpenMenu)}
-              className="block md:hidden ml-5 bg-blue-400 hover:bg-blue-300 transition-all duration-200 rounded-lg p-1 mr-4">
-              <RiMenu3Fill className="text-[1.9rem]" />
-            </motion.div>
+              className="block md:hidden ml-5 bg-gray-500 hover:bg-gray-600 transition-all duration-200 rounded-lg p-1 mr-4">
+              <RiMenu3Fill className="text-[1.5rem] text-white" />
+            </motion.button>
 
           </div>
-          <Link href="/#cta">
+          <Link href="/#cta" className="hidden md:flex">
             <button className="px-6 py-3 rounded-full bg-yellow-400 text-gray-800 text-md font-normal  ml-6">
               Download
             </button>
