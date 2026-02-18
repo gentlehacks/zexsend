@@ -6,7 +6,7 @@ import PlayStoreButton from "./PlayStoreButton";
 
 const HeroSection = () => {
   return (
-    <div className="pt-12   relative flex flex-col  items-center justify-center pb-0 px-5">
+    <div className="pt-12   relative flex flex-col  items-center justify-center pb-0 px-4 sm:px-5">
       <div className="absolute left-0 top-0 bottom-0 -z-10 w-full">
         <div className="absolute inset-0 h-full w-full bg-gray-100 bg-[linear-gradient(to_right,#000000_1px,transparent_1px),linear-gradient(to_bottom,#000000_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_70%)]">
         </div>
