@@ -132,7 +132,7 @@ export default function Footer() {
         {/* Footer Bottom Copyright */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-gray-500 text-sm">
           <p>
-            Owolink © {new Date().getFullYear()} owolink.com. All rights reserved.
+            Owolink © {new Date().getFullYear()} Owolink All rights reserved.
           </p>
           <p className="mt-4 sm:mt-0">
             Powered by secure Paystack payments & high-availability VTU infrastructure.
