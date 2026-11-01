@@ -3,7 +3,7 @@ import PlausibleProvider from "next-plausible";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Script from "next/script";
-import Header from "@/components/Header";
+import ConditionalHeader from "@/components/ConditionalHeader";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,58 +15,49 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon-black.png",
   },
-  title: "ZexSend - Share thoughtfull support",
+  title: "Owolink - Event Hosting & Seamless Contribution Links",
   description:
-    "ZexSend is Nigeria's first social gift platform that bridges the gap between what you want to help with and what they actually need. Choose a purpose, add a note, and let them decide. It's support that finally fits.",
+    "Owolink is the premier platform for hosting celebrations, creating custom contribution links, collecting funds securely via Paystack, and managing everyday mobile utilities.",
   keywords: [
-    "ZexSend",
-    "ZexSend app",
-    "ZexSend Nigeria",
-    "airtime gifting",
-    "data gifting",
-    "financial gifts",
-    "gift sharing platform",
-    "thoughtful gifting",
-    "mobile gifting",
-    "digital gifts",
-    "gift intent",
-    "heartfelt messages",
-    "Nigerian gifting app",
-    "gift friends",
-    "gift love ones",
-    "ZexSend features",
-    "ZexSend download",
-    "ZexSend startup",
-    "ZexSend founder",
-    "Salihu Adamu",
+    "Owolink",
+    "Owolink app",
+    "owolink.com",
+    "event hosting Nigeria",
+    "contribution links",
+    "event funding platform",
+    "Paystack event payments",
+    "wedding contribution links",
+    "birthday fundraise app",
+    "airtime and data wallet",
+    "Nigerian fintech startup",
   ],
-  authors: [{ name: "Salihu Adamu", url: "https://zexsend.com/about" }],
-  creator: "ZexSend",
-  publisher: "ZexSend",
+  authors: [{ name: "Salihu Adamu", url: "https://owolink.com/about" }],
+  creator: "Owolink",
+  publisher: "Owolink",
   openGraph: {
     type: "website",
-    url: "https://zexsend.com",
-    title: "ZexSend - Nigeria's Gift Sharing Platform.",
+    url: "https://owolink.com",
+    title: "Owolink - Event Hosting & Seamless Contribution Links",
     description:
-      "Nigeria’s super app for gifting and add intent with heartfelt messages. The thoughtful way to give financial gifts.",
-    siteName: "ZexSend",
+      "Create custom celebration pages, collect contributions via Paystack, and manage everyday mobile utilities from a single wallet.",
+    siteName: "Owolink",
     images: [
       {
-        url: "https://zexsend.com/favicon.png",
+        url: "https://owolink.com/favicon.png",
         width: 1200,
         height: 630,
-        alt: "ZexSend Preview",
+        alt: "Owolink Preview",
       },
     ],
     locale: "en_NG",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZexSend - Nigeria's Gift Sharing Platform.",
+    title: "Owolink - Event Hosting & Seamless Contribution Links",
     description:
-      "Nigeria’s super app for gifting and add intent with heartfelt messages. The thoughtful way to give financial gifts.",
-    images: ["https://zexsend.com/zexsend-twitter-card-2.png"],
-    creator: "@zexsend",
+      "Create custom celebration pages, collect contributions via Paystack, and manage everyday mobile utilities from a single wallet.",
+    images: ["https://owolink.com/owolink-twitter-card.png"],
+    creator: "@owolink",
   },
   manifest: "/site.webmanifest",
 };
@@ -77,42 +68,34 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What is ZexSend?",
+      name: "What is Owolink?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "ZexSend is Nigeria’s super app for gifting airtime & mobile data with heartfelt messages. The thoughtful way to give financial gifts.",
+        text: "Owolink (owolink.com) is a platform for event organizers to create custom celebration pages, collect contributions securely via Paystack, and manage everyday mobile utilities.",
       },
     },
     {
       "@type": "Question",
-      name: "Is ZexSend a Nigerian startup?",
+      name: "How do event contribution links work?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, ZexSend is a Nigerian startup focused on providing innovative gifting solutions.",
+        text: "You create a custom event link for weddings, birthdays, or fundraisers and share it with friends and family. Contributors can pay securely using card, USSD, or bank transfer.",
       },
     },
     {
       "@type": "Question",
-      name: "How can I join the ZexSend waitlist?",
+      name: "Are payments on Owolink secure?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can join the waitlist by visiting our website and submitting your name and email in the waitlist form.",
+        text: "Yes, all contributions are securely processed through Paystack with bank-grade encryption and PCI-DSS compliance.",
       },
     },
     {
       "@type": "Question",
-      name: "How do I contact ZexSend?",
+      name: "Who founded Owolink?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "You can contact us through the contact form on our website or via our official email.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Who is Founder of ZexSend?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "ZexSend is founded by Salihu Adamu, a 20 years old nigerian software developer passionate about solving problem in a digital way.",
+        text: "Owolink is founded by Salihu Adamu, a Nigerian software developer and startup founder.",
       },
     },
   ],
@@ -124,14 +107,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="relative min-h-screen bg-gray-50">
+    <html lang="en" className="flex-1 relative min-h-screen bg-gray-50">
       <body className={`${poppins.variable} antialiased`}>
         <PlausibleProvider
-          domain="pexelxus.com"
+          domain="owolink.com"
           trackOutboundLinks={true}
           enabled={process.env.NODE_ENV === "production"}
         >
-          <Header />
+          {/* Automatically hides header on /e/... routes */}
+          <ConditionalHeader />
           {children}
           <Script
             id="faq-schema"
