@@ -73,31 +73,31 @@ export default function ContributionSuccessPage() {
   };
 
   return (
-    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-hidden selection:bg-emerald-500 selection:text-white">
+    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-hidden selection:bg-blue-600 selection:text-white">
 
-      {/* Background Ambient Glow Effects */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Background Ambient Glow Effects matching your landing page */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-600/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none" />
 
       {/* Main Card Container */}
       <div className="max-w-lg w-full p-8 sm:p-10 rounded-[2.5rem] bg-slate-900/80 backdrop-blur-xl border border-slate-800/80 shadow-2xl shadow-black/60 space-y-8 relative overflow-hidden transition-all duration-500 animate-in fade-in zoom-in-95">
 
         {/* Decorative Sparkle Accent */}
-        <div className="absolute top-0 right-0 p-8 text-emerald-500/10 pointer-events-none">
+        <div className="absolute top-0 right-0 p-8 text-blue-500/10 pointer-events-none">
           <Sparkles className="h-40 w-40" />
         </div>
 
         {/* Animated Success Icon Header */}
         <div className="relative mx-auto w-24 h-24 flex items-center justify-center">
-          <div className="absolute inset-0 rounded-full bg-emerald-500/20 animate-ping opacity-75" />
-          <div className="relative h-24 w-24 bg-gradient-to-b from-emerald-500/20 to-emerald-500/5 border border-emerald-500/30 text-emerald-400 rounded-full flex items-center justify-center shadow-inner">
-            <CheckCircle2 className="h-12 w-12 drop-shadow-[0_0_12px_rgba(16,185,129,0.4)]" />
+          <div className="absolute inset-0 rounded-full bg-blue-500/20 animate-ping opacity-75" />
+          <div className="relative h-24 w-24 bg-gradient-to-b from-blue-500/20 to-blue-600/5 border border-blue-500/30 text-blue-400 rounded-full flex items-center justify-center shadow-inner">
+            <CheckCircle2 className="h-12 w-12 drop-shadow-[0_0_12px_rgba(59,130,246,0.4)]" />
           </div>
         </div>
 
         {/* Title & Subtitle */}
         <div className="space-y-3 text-center">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold tracking-wide uppercase">
             <ShieldCheck className="h-3.5 w-3.5" />
             <span>Verified Secure Payment</span>
           </div>
@@ -112,16 +112,16 @@ export default function ContributionSuccessPage() {
         {/* Amount Card / Verification State */}
         {isVerifying ? (
           <div className="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-center gap-3 text-slate-300 text-sm shadow-inner">
-            <Loader2 className="h-5 w-5 animate-spin text-emerald-400" />
+            <Loader2 className="h-5 w-5 animate-spin text-blue-400" />
             <span className="font-medium">Confirming transaction with bank...</span>
           </div>
         ) : amount ? (
           <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800/80 text-center space-y-2 relative overflow-hidden group">
-            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-transparent opacity-50" />
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-transparent opacity-50" />
             <span className="text-xs font-medium text-slate-400 uppercase tracking-widest block">
               Contribution Amount
             </span>
-            <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
+            <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
               ₦{Number(amount).toLocaleString()}
             </div>
             {reference && (
@@ -134,7 +134,7 @@ export default function ContributionSuccessPage() {
           </div>
         ) : (
           <div className="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-center gap-2 text-slate-400 text-sm">
-            <HeartHandshake className="h-5 w-5 text-emerald-400" />
+            <HeartHandshake className="h-5 w-5 text-blue-400" />
             <span>Support registered successfully</span>
           </div>
         )}
