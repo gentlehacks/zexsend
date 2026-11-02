@@ -3,10 +3,9 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useSearchParams, useParams } from 'next/navigation';
-import { CheckCircle2, Share2, Sparkles, ArrowRight, Loader2 } from 'lucide-react';
+import { CheckCircle2, Share2, Sparkles, ArrowRight, Loader2, HeartHandshake, ShieldCheck } from 'lucide-react';
 
 export default function ContributionSuccessPage() {
-  // 1. Get slug directly from route params via hook (works reliably in Next.js 15)
   const params = useParams();
   const slug = params?.slug as string;
 
@@ -16,8 +15,8 @@ export default function ContributionSuccessPage() {
 
   const [amount, setAmount] = useState<string | null>(fallbackAmount);
   const [isVerifying, setIsVerifying] = useState<boolean>(Boolean(reference));
+  const [copied, setCopied] = useState<boolean>(false);
 
-  // 2. Automatically verify transaction with backend on mount
   useEffect(() => {
     console.log("👉 Success Page Loaded! Reference:", reference);
 
@@ -59,8 +58,8 @@ export default function ContributionSuccessPage() {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'I just contributed on GoSend!',
-          text: 'Check out this event and support the host:',
+          title: 'I just supported this event on Owolink!',
+          text: 'Check out this event and celebrate with the host:',
           url,
         });
       } catch (err) {
@@ -68,67 +67,105 @@ export default function ContributionSuccessPage() {
       }
     } else {
       await navigator.clipboard.writeText(url);
-      alert('Event link copied to clipboard!');
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center justify-center p-6 text-center">
-      <div className="max-w-md w-full p-8 rounded-3xl bg-slate-900 border border-slate-800 shadow-2xl space-y-6 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-8 text-blue-500/10 pointer-events-none">
-          <Sparkles className="h-32 w-32" />
+    <main className="min-h-screen bg-slate-950 text-slate-100 flex flex-col items-center justify-center p-4 sm:p-6 relative overflow-hidden selection:bg-emerald-500 selection:text-white">
+
+      {/* Background Ambient Glow Effects */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
+
+      {/* Main Card Container */}
+      <div className="max-w-lg w-full p-8 sm:p-10 rounded-[2.5rem] bg-slate-900/80 backdrop-blur-xl border border-slate-800/80 shadow-2xl shadow-black/60 space-y-8 relative overflow-hidden transition-all duration-500 animate-in fade-in zoom-in-95">
+
+        {/* Decorative Sparkle Accent */}
+        <div className="absolute top-0 right-0 p-8 text-emerald-500/10 pointer-events-none">
+          <Sparkles className="h-40 w-40" />
         </div>
 
-        <div className="h-20 w-20 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto shadow-lg shadow-emerald-500/10">
-          <CheckCircle2 className="h-10 w-10" />
+        {/* Animated Success Icon Header */}
+        <div className="relative mx-auto w-24 h-24 flex items-center justify-center">
+          <div className="absolute inset-0 rounded-full bg-emerald-500/20 animate-ping opacity-75" />
+          <div className="relative h-24 w-24 bg-gradient-to-b from-emerald-500/20 to-emerald-500/5 border border-emerald-500/30 text-emerald-400 rounded-full flex items-center justify-center shadow-inner">
+            <CheckCircle2 className="h-12 w-12 drop-shadow-[0_0_12px_rgba(16,185,129,0.4)]" />
+          </div>
         </div>
 
-        <div className="space-y-2">
-          <h1 className="text-2xl font-extrabold text-white">Thank You!</h1>
-          <p className="text-slate-400 text-sm">
-            Your contribution has been sent successfully to the host.
+        {/* Title & Subtitle */}
+        <div className="space-y-3 text-center">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+            <ShieldCheck className="h-3.5 w-3.5" />
+            <span>Verified Secure Payment</span>
+          </div>
+          <h1 className="text-3xl font-black tracking-tight text-white">
+            Thank You So Much!
+          </h1>
+          <p className="text-slate-400 text-sm max-w-sm mx-auto leading-relaxed">
+            Your generous contribution has been securely processed and delivered to the host.
           </p>
         </div>
 
+        {/* Amount Card / Verification State */}
         {isVerifying ? (
-          <div className="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-center gap-2 text-slate-400 text-sm">
-            <Loader2 className="h-4 w-4 animate-spin text-emerald-400" />
-            <span>Verifying contribution...</span>
+          <div className="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-center gap-3 text-slate-300 text-sm shadow-inner">
+            <Loader2 className="h-5 w-5 animate-spin text-emerald-400" />
+            <span className="font-medium">Confirming transaction with bank...</span>
           </div>
         ) : amount ? (
-          <div className="p-4 rounded-2xl bg-slate-800/80 border border-slate-700">
-            <span className="text-xs text-slate-400 uppercase tracking-wider block mb-1">
-              Amount Sent
+          <div className="p-6 rounded-2xl bg-slate-950/60 border border-slate-800/80 text-center space-y-2 relative overflow-hidden group">
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-transparent opacity-50" />
+            <span className="text-xs font-medium text-slate-400 uppercase tracking-widest block">
+              Contribution Amount
             </span>
-            <span className="text-3xl font-black text-emerald-400">
+            <div className="text-4xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-300">
               ₦{Number(amount).toLocaleString()}
-            </span>
+            </div>
             {reference && (
-              <span className="block text-[10px] text-slate-500 mt-2 font-mono">
-                Ref: {reference}
-              </span>
+              <div className="pt-2 flex items-center justify-center gap-2">
+                <span className="text-[11px] text-slate-500 font-mono bg-slate-900 px-3 py-1 rounded-md border border-slate-800">
+                  Ref: {reference}
+                </span>
+              </div>
             )}
           </div>
-        ) : null}
+        ) : (
+          <div className="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 flex items-center justify-center gap-2 text-slate-400 text-sm">
+            <HeartHandshake className="h-5 w-5 text-emerald-400" />
+            <span>Support registered successfully</span>
+          </div>
+        )}
 
+        {/* Action Buttons */}
         <div className="space-y-3 pt-2">
           <button
             onClick={handleShare}
-            className="w-full py-3.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-750 text-white font-bold text-sm border border-slate-700 flex items-center justify-center gap-2 transition-all"
+            className="w-full py-4 px-5 rounded-2xl bg-slate-800/80 hover:bg-slate-800 text-white font-bold text-sm border border-slate-700/80 flex items-center justify-center gap-2.5 transition-all duration-200 shadow-lg active:scale-[0.98]"
           >
             <Share2 className="h-4 w-4 text-blue-400" />
-            Share Event with Friends
+            <span>{copied ? 'Link Copied to Clipboard!' : 'Share Event with Friends'}</span>
           </button>
 
           <Link
             href={slug ? `/e/${slug}` : '/'}
-            className="w-full py-3.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-lg shadow-blue-600/25 transition-all"
+            className="w-full py-4 px-5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-sm flex items-center justify-center gap-2.5 shadow-xl shadow-blue-600/30 transition-all duration-200 group active:scale-[0.98]"
           >
-            <span>Back to Event</span>
-            <ArrowRight className="h-4 w-4" />
+            <span>Return to Event Page</span>
+            <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
           </Link>
         </div>
+
+        {/* Footer Branding */}
+        <div className="text-center pt-2">
+          <p className="text-xs text-slate-500 font-medium">
+            Powered by <span className="text-slate-400 font-bold">Owolink</span> • Zero-Fee Crowdfunding
+          </p>
+        </div>
+
       </div>
-    </div>
+    </main>
   );
 }

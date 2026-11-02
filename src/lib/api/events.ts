@@ -6,7 +6,7 @@ import {
 
 // Strip any accidental trailing slash from the environment variable
 const BASE_URL = (
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000"
+  process.env.NEXT_PUBLIC_BACKEND_URL || ""
 ).replace(/\/$/, "");
 
 export async function getEventBySlug(slug: string): Promise<Event | null> {
