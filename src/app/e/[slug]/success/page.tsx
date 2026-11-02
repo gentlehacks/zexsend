@@ -29,7 +29,7 @@ export default function ContributionSuccessPage() {
 
     const verifyPayment = async () => {
       try {
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || '';
         const targetUrl = `${backendUrl}/api/contributions/verify/${reference}`;
 
         console.log("🚀 Triggering backend verification request to:", targetUrl);
