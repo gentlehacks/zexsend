@@ -54,14 +54,14 @@ const Contact = () => {
     {
       icon: FaInstagram,
       label: "Instagram",
-      handle: "@owolink",
-      url: "https://instagram.com/owolink"
+      handle: "@owolinkng",
+      url: "https://instagram.com/owolinkng"
     },
     {
       icon: FaTwitter,
       label: "Twitter / X",
-      handle: "@owolink",
-      url: "https://twitter.com/owolink"
+      handle: "@owolinkng",
+      url: "https://twitter.com/owolinkng"
     },
     {
       icon: FaLinkedin,

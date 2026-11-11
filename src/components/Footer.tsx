@@ -98,7 +98,7 @@ export default function Footer() {
             <h4 className="text-white font-bold text-lg tracking-wide">Connect</h4>
             <div className="flex items-center gap-3">
               <Link
-                href="https://x.com/owolink"
+                href="https://x.com/owolinkng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all"
@@ -107,7 +107,7 @@ export default function Footer() {
                 <FaXTwitter className="w-4 h-4" />
               </Link>
               <Link
-                href="https://instagram.com/owolink"
+                href="https://instagram.com/owolinkng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-gray-900 border border-gray-800 flex items-center justify-center text-gray-300 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all"
